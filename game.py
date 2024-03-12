@@ -39,6 +39,9 @@ def door_puzzle():
     elif 'look at door' in action:
         print("It's a very sturdy door. There's some writing on it.")
     elif 'read' and 'writing' in action:
+        print("--")
+    else:
+        print("--")
 
     
 
