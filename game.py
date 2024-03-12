@@ -13,7 +13,7 @@ def start():
     choice = input("> ").lower()
 
     if "west" in choice:
-        biblical_sources()
+        door_puzzle()
     elif "east" in choice:
         extrabiblical_sources()
     elif "north" in choice:
@@ -23,8 +23,24 @@ def start():
              "Maybe Jesus is crucified there.")
 
 
-def biblical_sources():
-    pass
+def door_puzzle():
+    print("The path you chose brings you to a tall door.")
+    print("What do you do?")
+
+    door_open = False
+
+    action = input("> ")
+
+    if 'knock' in action:
+        print("You hear someone screaming, 'Come on in door is open!'")
+    elif action == 'open sesame':
+        print("The door opens with a loud creeking sound.")
+        door_open = True
+    elif 'look at door' in action:
+        print("It's a very sturdy door. There's some writing on it.")
+    elif 'read' and 'writing' in action:
+
+    
 
 def dead(reason):
     print(reason, "You Died.")
