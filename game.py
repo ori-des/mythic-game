@@ -29,21 +29,28 @@ def door_puzzle():
 
     door_open = False
 
-    action = input("> ")
+    while True:
 
-    if 'knock' in action:
-        print("You hear someone screaming, 'Come on in door is open!'")
-    elif action == 'open sesame':
-        print("The door opens with a loud creeking sound.")
-        door_open = True
-    elif 'look at door' in action:
-        print("It's a very sturdy door. There's some writing on it.")
-    elif 'read' and 'writing' in action:
-        print("--")
-    else:
-        print("--")
+        action = input("> ").lower()
 
-    
+        if 'knock' in action:
+            print("You hear someone screaming, 'Come on in door is open!'")
+        elif action == 'jesus christ':
+            print("The door opens with a loud creeking sound.")
+            door_open = True
+        elif 'look' and 'door' in action:
+            print("It's a very sturdy door. There's some writing on it.")
+        elif 'read' and 'writing' in action:
+            print("The writing says 'λόγος'")
+        elif action == 'enter' and door_open:
+            print("You enter the library.")
+            biblical_sources()
+        else:
+            print("I cannot do that.")
+
+def biblical_sources():
+    print("There you are.")
+    exit(0)
 
 def dead(reason):
     print(reason, "You Died.")
