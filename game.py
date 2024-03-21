@@ -64,10 +64,10 @@ def biblical_sources():
 
         if choice == "paul":
             talk_with_paul()
-        elif choice == "luke":
-            talk_with_luke()
         elif choice == "mark":
             talk_with_mark()
+        elif choice == "luke":
+            talk_with_luke()
         elif choice == "matthew":
             talk_with_matthew()
         elif choice == "john":
@@ -82,7 +82,23 @@ def talk_with_paul():
     exit(0)
 
 def talk_with_mark():
-    print("Hello")
+    print("Welcome my friend.")
+    print("What do you want to know?")
+
+    while True:
+
+        question = input("> ").lower()
+
+        if question == "hello":
+            print("Hello my friend.")
+        elif "jesus" in question:
+            print("example")
+        else:
+            print("I don't know that.")
+            exit(0)
+
+
+
     exit(0)
 
 def talk_with_luke():
