@@ -34,7 +34,7 @@ def door_puzzle():
         action = input("> ").lower()
 
         if 'knock' in action:
-            print("You hear someone screaming, 'Come on in door is open!'")
+            print("You hear someone screaming, 'Come on in, the door is open!'")
         elif action == 'jesus christ':
             print("The door opens with a loud creeking sound.")
             door_open = True
@@ -49,7 +49,56 @@ def door_puzzle():
             print("I cannot do that.")
 
 def biblical_sources():
-    print("There you are.")
+    print("You find yourself in a library with the biblical texts, up on display.")
+    print("in the middle are the epistles of Paul.")
+    print("On your left are the gospels of Luke and Mark.")
+    print("On your right are the gospels of Matthew and John.")
+    print("'But I want to read the acts!!' (You think).")
+    print("It's on the floor.")
+    print("Where do you want to start?")
+
+
+    while True:
+
+        choice = input("> ").lower()
+
+        if choice == "paul":
+            talk_with_paul()
+        elif choice == "luke":
+            talk_with_luke()
+        elif choice == "mark":
+            talk_with_mark()
+        elif choice == "matthew":
+            talk_with_matthew()
+        elif choice == "john":
+            talk_with_john()
+        elif choice == "acts":
+            fuck_the_acts()
+        else:
+            print("I will not comply with that.")
+
+def talk_with_paul():
+    print("You made it")
+    exit(0)
+
+def talk_with_mark():
+    print("Hello")
+    exit(0)
+
+def talk_with_luke():
+    print("Luke")
+    exit(0)
+
+def talk_with_matthew():
+    print("Matthew")
+    exit(0)
+
+def talk_with_john():
+    print("John")
+    exit(0)
+
+def fuck_the_acts():
+    print("ACt")
     exit(0)
 
 def dead(reason):
