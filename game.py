@@ -91,8 +91,18 @@ def talk_with_mark():
 
         if question == "hello":
             print("Hello my friend.")
-        elif "jesus" in question:
-            print("example")
+        elif question == "who are you?":
+            print("I am Mark, the author of the first gospel.")
+        elif "real or myth" in question:
+            print("I was writing a myth for my own purposes.")
+        elif "how" and "know" in question:
+            print("By analyizing my text, I can give you an example if you wish.")
+        elif "example" in question:
+            print("You are surely familiar with the episode at the crucifixion,"
+                  "where Pilate makes the people chose between Jesus and Barabbas")
+            print("At first glance it might seem like some historical truth under the myth.")
+            print("But it's not what it is.")
+            
         else:
             print("I don't know that.")
             exit(0)
