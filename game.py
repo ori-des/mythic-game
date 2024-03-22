@@ -85,13 +85,15 @@ def talk_with_mark():
     print("Welcome my friend.")
     print("What do you want to know?")
 
+    barabbas_on = False
+
     while True:
 
         question = input("> ").lower()
 
         if question == "hello":
             print("Hello my friend.")
-        elif question == "who are you?":
+        elif "who are you" in question:
             print("I am Mark, the author of the first gospel.")
         elif "real or myth" in question:
             print("I was writing a myth for my own purposes.")
@@ -101,8 +103,23 @@ def talk_with_mark():
             print("You are surely familiar with the episode at the crucifixion,"
                   "where Pilate makes the people chose between Jesus and Barabbas")
             print("At first glance it might seem like some historical truth under the myth.")
-            print("But it's not what it is.")
-            
+            print("But that's not what it is.")
+            barabbas_on = True
+        elif barabbas_on and "barabbas" in question:
+            print("This is the story as I've told it in my gospel.")
+            print("At the feast, Pilate used to release to them one prisoner of their choice. "
+                  "And there was one called Barabbas, chained up with those who'd engaged in rebellion, " 
+                  "who in the insurrection had committed murder. "
+                  "The mob went up and began to ask him to do what he usually did for them. "
+                  "And Pilate answered them, saying, 'Do you want me to release to you the King of the Jews?' " 
+                  "For he realized the chief priests had seized [Jesus] out of jealousy. "
+                  "But the chief priests stirred up the mob, so he would release Barabbas to them instead. "
+                  "And Pilate again answered and said to them, 'So what should I do about the one you call the King of the Jews?' " 
+                  "And they cried out again, 'Crucify him!' And Pilate said, 'What evil has he done?' But they cried out more, " 
+                  "'Crucify him!' And Pilate, wishing to satisfy the mob, released to them Barabbas, "
+                  "and sent Jesus to be whipped and crucified (Mk 15.6-15)")
+        elif "what is it" in question:
+            print("It's an allegory for the Jewish ritual at Yom Kippur.")
         else:
             print("I don't know that.")
             exit(0)
