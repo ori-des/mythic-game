@@ -53,7 +53,7 @@ def biblical_sources():
     print("in the middle are the epistles of Paul.")
     print("On your left are the gospels of Luke and Mark.")
     print("On your right are the gospels of Matthew and John.")
-    print("'But I want to read the acts!!' (You think).")
+    print("'But what if I want to read the acts!!' (You think).")
     print("It's on the floor.")
     print("Where do you want to start?")
 
@@ -130,7 +130,6 @@ def talk_with_mark():
             print("Vs. Jesus, the spiritual saviour, the messiah as God wanted him to be.")
         else:
             print("I don't know that.")
-            exit(0)
 
 def talk_with_luke():
     print("Luke")
