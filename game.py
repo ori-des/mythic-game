@@ -124,6 +124,10 @@ def talk_with_mark():
             print("one to be released in the wild containing the sins of Israel, the other to be slaughtered.")
         elif "what does barabbas mean" in question:
             print("Son of the Father in Aramaic.")
+        elif "what were your purposes" in question:
+            print("Depict one revolutionary against the other, Barabbas the murderous leader of a military revolution.")
+            print("The messiah the people wanted.")
+            print("Vs. Jesus, the spiritual saviour, the messiah as God wanted him to be.")
         else:
             print("I don't know that.")
             exit(0)
