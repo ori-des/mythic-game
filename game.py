@@ -120,13 +120,13 @@ def talk_with_mark():
                   "and sent Jesus to be whipped and crucified (Mk 15.6-15)")
         elif "what is it" in question:
             print("It's an allegory for the Jewish ritual at Yom Kippur.")
+            print("During the ritual two goats were chosen: ")
+            print("one to be released in the wild containing the sins of Israel, the other to be slaughtered.")
+        elif "what does barabbas mean" in question:
+            print("Son of the Father in Aramaic.")
         else:
             print("I don't know that.")
             exit(0)
-
-
-
-    exit(0)
 
 def talk_with_luke():
     print("Luke")
