@@ -128,6 +128,8 @@ def talk_with_mark():
             print("Depict one revolutionary against the other, Barabbas the murderous leader of a military revolution.")
             print("The messiah the people wanted.")
             print("Vs. Jesus, the spiritual saviour, the messiah as God wanted him to be.")
+        elif "go back" in question:
+            biblical_sources()
         else:
             print("I don't know that.")
 
