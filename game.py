@@ -134,8 +134,20 @@ def talk_with_mark():
             print("I don't know that.")
 
 def talk_with_matthew():
-    print("Matthew")
-    exit(0)
+     print("Welcome my friend.")
+    print("What do you want to know?")
+
+    while True:
+
+        question = input("> ").lower()
+
+        if question == "hello":
+            print("Hello my friend.")
+        elif "who are you" in question:
+            print("I am Matthew, the author of the second gospel.")
+        else:
+            print("I can't answer that question.")
+            exit(0)
 
 def talk_with_luke():
     print("Luke")
