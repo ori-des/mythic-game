@@ -133,12 +133,12 @@ def talk_with_mark():
         else:
             print("I don't know that.")
 
-def talk_with_luke():
-    print("Luke")
-    exit(0)
-
 def talk_with_matthew():
     print("Matthew")
+    exit(0)
+
+def talk_with_luke():
+    print("Luke")
     exit(0)
 
 def talk_with_john():
