@@ -22,7 +22,6 @@ def start():
         dead("Upon too much pondering the holy spirit engulfes you and carries you to heaven. "
              "Maybe Jesus is crucified there.")
 
-
 def door_puzzle():
     print("The path you chose brings you to a tall door.")
     print("What do you do?")
@@ -134,8 +133,8 @@ def talk_with_mark():
             print("I don't know that.")
 
 def talk_with_matthew():
-     print("Welcome my friend.")
-    print("What do you want to know?")
+    print("There you are friend.")
+    print("I am Matthew, you can talk with me.")
 
     while True:
 
