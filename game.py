@@ -167,8 +167,21 @@ def talk_with_matthew():
             print("I can't answer that question.")
 
 def talk_with_luke():
-    print("Luke")
-    exit(0)
+    print("You've reached Luke's abode.")
+    print("I am him.")
+    print("What's on your mind friend?")
+
+    while True:
+
+        question = input("> ").lower()
+        
+        if question == "hello":
+            print("Hello friend.")
+        else:
+            print("That's unknown to me.")
+
+
+
 
 def talk_with_john():
     print("John")
