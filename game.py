@@ -165,7 +165,6 @@ def talk_with_matthew():
             biblical_sources()
         else:
             print("I can't answer that question.")
-            exit(0)
 
 def talk_with_luke():
     print("Luke")
