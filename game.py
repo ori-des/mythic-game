@@ -141,9 +141,28 @@ def talk_with_matthew():
         question = input("> ").lower()
 
         if question == "hello":
-            print("Hello my friend.")
+            print("Hello friend.")
         elif "who are you" in question:
             print("I am Matthew, the author of the second gospel.")
+        elif "what sources did you use" in question:
+            print("My source was the gospel of Mark.")
+        elif "what were your intentions" in question:
+            print("I wanted a version of Christianity that was more torah friendly.")
+        elif "how do we know you took from mark" in question:
+            print("I rewrote his gospel to fit my agenda, sometimes I fixed his mistakes"
+                  "and made things more ridiculous in the process."
+                  "Like my interpretation of the donkey passage in Zechariah 9.9."
+                  "I made Jesus enter Jerusalem on two donkeys because I read at as:"
+                  "See, your king comes to you," 
+                  "righteous and victorious,"
+                  "lowly and riding on a donkey,"
+                  "AND on a colt, the foal of a donkey.")
+        elif "was the sermon on the mount historical" in question:
+            print("There is no reason to believe that.")
+            print("I meticulously crafted it to have a literary structure.")
+            print("It fits within rabbinical discourses on how could the jews fulfill the law without the temple.")
+        elif "go back" in question:
+            biblical_sources()
         else:
             print("I can't answer that question.")
             exit(0)
