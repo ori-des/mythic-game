@@ -177,6 +177,11 @@ def talk_with_luke():
         
         if question == "hello":
             print("Hello friend.")
+        elif "you writing history" in question:
+            print("I was pretending to.")
+            print("But I wasn't actually consulting sources.")
+            print("I was just taking from Mark and Matthew and changing it to my liking.")
+            print("What you see is the illusion of historical narration.")
         else:
             print("That's unknown to me.")
 
