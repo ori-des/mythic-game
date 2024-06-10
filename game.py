@@ -198,15 +198,32 @@ def talk_with_luke():
             'Elijah picked up the child and carried him down from the room into the house. \n'
             'He gave him to his mother and said, “Look, your son is alive!” \n'
             'Then the woman said to Elijah, “Now I know that you are a man of God and that the word of the Lord from your mouth is the truth.”\n')
+        elif "go back" in question:
+            biblical_sources()
         else:
             print("That's unknown to me.")
 
-
-
-
 def talk_with_john():
     print("John")
-    exit(0)
+
+     while True:
+
+        question = input("> ").lower()
+        
+        if question == "hello":
+            print("Hello friend.")
+        elif "is your gospel independent" in question:
+            print("There's no reason to believe that.")
+            print("I clearly know of Mark, I tell the same stories in the same order.")
+            print("I insert the same character in the story as Luke, Martha, Mary's sister.")
+            print("And me and Luke both claim Judas was possesed by Satan.")
+            print("Mark's gospel theme was that Jesus would leave no signs to the jews.")
+            print("Luke's and Matthew's have the resurrection as one sign.")
+            print("My gospel has all the signs!!")
+        elif "go back" in question:
+            biblical_sources()
+        else:
+            print("That's unknown to me.")
 
 def fuck_the_acts():
     print("ACt")
