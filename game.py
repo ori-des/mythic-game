@@ -182,6 +182,22 @@ def talk_with_luke():
             print("But I wasn't actually consulting sources.")
             print("I was just taking from Mark and Matthew and changing it to my liking.")
             print("What you see is the illusion of historical narration.")
+        elif "sources" in question:
+            print("Mark, Matthew and scripture.")
+        elif "example" in question:
+            print("My story of the healing of the widow's son at Naim.")
+            print("It's a retelling of the same legend told of Elijah in the book of Kings.")
+            print(' Some time later the son of the woman who owned the house became ill.\n' 
+            'He grew worse and worse, and finally stopped breathing. She said to Elijah, “What do you have against me, man of God? \n'
+            'Did you come to remind me of my sin and kill my son?”\n'
+            '“Give me your son,” Elijah replied. He took him from her arms, carried him to the upper room where he was staying, \n'
+            'and laid him on his bed. 20 Then he cried out to the Lord, “Lord my God, have you brought tragedy even on this widow I am staying with, \n' 
+            'by causing her son to die?” 21 Then he stretched himself out on the boy three times and cried out to the Lord, \n'
+            '“Lord my God, let this boy’s life return to him!” \n'
+            'The Lord heard Elijah’s cry, and the boy’s life returned to him, and he lived. \n'
+            'Elijah picked up the child and carried him down from the room into the house. \n'
+            'He gave him to his mother and said, “Look, your son is alive!” \n'
+            'Then the woman said to Elijah, “Now I know that you are a man of God and that the word of the Lord from your mouth is the truth.”\n')
         else:
             print("That's unknown to me.")
 
