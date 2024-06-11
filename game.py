@@ -49,9 +49,9 @@ def door_puzzle():
 
 def biblical_sources():
     print("You find yourself in a library with the biblical texts, up on display.")
-    print("in the middle are the epistles of Paul.")
     print("On your left are the gospels of Luke and Mark.")
     print("On your right are the gospels of Matthew and John.")
+    print("In the middle are the epistles of Paul.")
     print("'But what if I want to read the acts!!' (You think).")
     print("It's on the floor.")
     print("Where do you want to start?")
