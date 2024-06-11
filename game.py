@@ -233,6 +233,11 @@ def talk_with_john():
             print("I insert the most ridiculous storylines to fit my 'giving signs' purpose.")
             print("The Doubting Thomas episode for example.")
             print("Or Lazarus, the beloved disciple.")
+            print("None of the other gospels have heard of him.")
+            print("There's a Lazarus mentioned in Luke I decided to make a character of my story.")
+            print("I made Lazarus very relevant in my gospel, he's the one that witnesses everything, and I cite as my source.")
+            print("He's so important that I turned his resurrection as the reason the Jews killed Jesus.")
+            print("None of this happens in the other gospels, because it is my invention, to fit my purpose.")
         elif "go back" in question:
             biblical_sources()
         else:
