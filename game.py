@@ -230,7 +230,9 @@ def talk_with_john():
         elif "historical" in question or "example" in question:
             print("There is no reason to believe I'm writing history.")
             print("I'm the most fervent propagandist of them all.")
-            print("")
+            print("I insert the most ridiculous storylines to fit my 'giving signs' purpose.")
+            print("The Doubting Thomas episode for example.")
+            print("Or Lazarus, the beloved disciple.")
         elif "go back" in question:
             biblical_sources()
         else:
