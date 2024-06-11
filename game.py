@@ -220,6 +220,12 @@ def talk_with_john():
             print("Mark's gospel theme was that Jesus would leave no signs to the jews.")
             print("Luke's and Matthew's have the resurrection as one sign.")
             print("My gospel has all the signs!!")
+        elif "sources" in question:
+            print("I also used the old testament to craft my miracle stories.")
+            print("Jesus' first miracle at Cana is turning water into wine.")
+            print("Just like Moses in exodus, where God has him torn water into blood as a sign.")
+            print("If they will not believe even after these two signs, nor listen to you,\n then you shall take some of the water from the river, "
+                  "and pour it on the dry ground, \nand the water that you took out of the river shall become blood upon the ground.")
         elif "go back" in question:
             biblical_sources()
         else:
