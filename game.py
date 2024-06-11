@@ -206,7 +206,7 @@ def talk_with_luke():
 def talk_with_john():
     print("John")
 
-     while True:
+    while True:
 
         question = input("> ").lower()
         
@@ -223,9 +223,14 @@ def talk_with_john():
         elif "sources" in question:
             print("I also used the old testament to craft my miracle stories.")
             print("Jesus' first miracle at Cana is turning water into wine.")
-            print("Just like Moses in exodus, where God has him torn water into blood as a sign.")
-            print("If they will not believe even after these two signs, nor listen to you,\n then you shall take some of the water from the river, "
-                  "and pour it on the dry ground, \nand the water that you took out of the river shall become blood upon the ground.")
+            print("Just like Moses in exodus, where God has him turn water into blood as a sign.")
+            print(" 'If they will not believe even after these two signs, nor listen to you,\nthen you shall take some of the water from the river, "
+                  "and pour it on the dry ground, \nand the water that you took out of the river shall become blood upon the ground.'")
+            print("I turned the last into the first.")
+        elif "historical" in question or "example" in question:
+            print("There is no reason to believe I'm writing history.")
+            print("I'm the most fervent propagandist of them all.")
+            print("")
         elif "go back" in question:
             biblical_sources()
         else:
