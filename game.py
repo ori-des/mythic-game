@@ -204,7 +204,8 @@ def talk_with_luke():
             print("That's unknown to me.")
 
 def talk_with_john():
-    print("John")
+    print("Hello wanderer.")
+    print("I'm John, come witness my signs.")
 
     while True:
 
