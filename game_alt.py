@@ -155,9 +155,9 @@ def pick_your_jesus():
 
     choice = input("> ").lower()
 
-    if "angel" and not "man" in choice:
+    if "angel" in choice and not "man" in choice:
         gold_room()
-    elif "man" and not "angel" in choice:
+    elif "man" in choice and not "angel" in choice:
         silver_room()
     else:
         dead("Jesus urged you to make a choice with his angel sword.")
@@ -179,4 +179,5 @@ def dead(reason):
     exit(0)
 
 
-start()
+#start()
+pick_your_jesus()
