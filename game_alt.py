@@ -12,7 +12,7 @@ def start():
     choice = input("> ").lower()
 
     if "west" in choice:
-        door_puzzle()
+        biblical_sources()
     elif "east" in choice:
         extrabiblical_sources()
     elif "north" in choice:
@@ -86,7 +86,7 @@ def extrabiblical_sources():
         else:
             print("I don't know that.")
 
-def door_puzzle():
+def biblical_sources():
     print("The path you chose brings you to a tall door.")
     print("What do you do?")
 
@@ -129,7 +129,6 @@ def fuck_the_acts():
             print("I am Luke.")
         else:
             print("I cannot help you with that.")
-
 
 def jesus_not_here_room():
     print("Jesus is not here!!")
