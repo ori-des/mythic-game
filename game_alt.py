@@ -112,8 +112,24 @@ def door_puzzle():
             print("I cannot do that.")
 
 def fuck_the_acts():
-    print("ACt")
-    exit(0)
+    print("Welcome friend, I'm Paul.")
+    print("I'm here to guide you through your journey.")
+    print("You will first hear about the Acts of the Apostles.")
+    print("Traditionally attributed to Luke the evangelist.")
+    print("We're going to help you evaluate if they are historical evidence or not.")
+    print("Luke will answer your questions, when you're done with him ask for me again.")
+
+    while True:
+
+        question = input("> ").lower()
+
+        if question == "hello":
+            print("Hello my friend.")
+        elif "who are you" in question:
+            print("I am Luke.")
+        else:
+            print("I cannot help you with that.")
+
 
 def jesus_not_here_room():
     print("Jesus is not here!!")
