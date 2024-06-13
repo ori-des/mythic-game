@@ -143,7 +143,10 @@ def fuck_the_acts():
             print("Both Paul and Jesus die and resurrect, but after his resurrection Paul goes back to his preaching.")
             print("Paul is then sent to meet the emperor of Rome, something that Jesus never accomplish.")
         elif "more examples" in question:
-            print("")
+            print("I take elements from the book of Tobit.")
+            print("You can figure it out from the language I use.")
+            print("When Paul is cured from his blindness we are told that 'the blindness fell from his eyes like scales'.")
+            print("In Tobit Rafael is told by God to 'scale away (lepisai)' Tobias's blindess. My use of language for Paul's only makes sense as an allusion to this.")
         elif question == "help":
             help(dialogue)
         else:
@@ -194,7 +197,8 @@ def silver_room():
     exit(0)
 
 def help(questions):
-    index = r.randint(0, 4)
+    list_lenght = len(questions)
+    index = r.randint(0, list_lenght - 1)
     print(f"{questions[index]}")
 
 def dead(reason):
