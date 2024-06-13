@@ -318,7 +318,7 @@ def talk_with_john():
     print("'Hello wanderer' says a polyphonic voice.")
     print("'I'm John, come witness my signs.'")
 
-    dialogue = ["hello"]
+    dialogue = ["hello", "who are you", "is your gospel independent", "sources", "historical", "example", "go back"]
 
     while True:
 
@@ -354,10 +354,18 @@ def talk_with_john():
             print("I made Lazarus very relevant in my gospel, he's the one that witnesses everything, and I cite as my source.")
             print("He's so important that I turned his resurrection as the reason the Jews killed Jesus.")
             print("None of this happens in the other gospels, because it is my invention, to fit my purpose.")
-        elif "go back" in question:
-            biblical_sources()
+        elif question == "go back":
+            talk_with_luke()
+        elif question == "paul":
+            talk_with_paul()
+        elif question == "help":
+            help(dialogue)
         else:
             print("That's unknown to me.")
+
+def talk_with_paul():
+    print("You made it")
+    exit(0)
 
 def jesus_not_here_room():
     print("Jesus is not here!!")
