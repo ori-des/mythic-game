@@ -149,8 +149,70 @@ def fuck_the_acts():
             print("In Tobit Rafael is told by God to 'scale away (lepisai)' Tobias's blindess. My use of language for Paul's only makes sense as an allusion to this.")
         elif question == "help":
             help(dialogue)
+        elif question == "paul":
+            talk_with_mark()
         else:
             print("I cannot help you with that.")
+
+def talk_with_mark():
+    print("Welcome my friend.")
+    print("What do you want to know?")
+
+    dialogue = ["hello", "who are you", "real or myth", "how do we know", "example", "go back"]
+    dialogue_unlocked = ["barabbas", "what is it", "what does barabbas mean", "what were your purposes"]
+    joined_dialogue = dialogue + dialogue_unlocked
+
+    barabbas_on = False
+
+    while True:
+
+        question = input("> ").lower()
+
+        if question == "hello":
+            print("Hello my friend.")
+        elif "who are you" in question:
+            print("I am Mark, the author of the first gospel.")
+        elif "real or myth" in question:
+            print("I was writing a myth for my own purposes.")
+        elif "how" and "know" in question:
+            print("By analyizing my text, I can give you an example if you wish.")
+        elif "example" in question:
+            print("You are surely familiar with the episode at the crucifixion,"
+                  "where Pilate makes the people chose between Jesus and Barabbas")
+            print("At first glance it might seem like some historical truth under the myth.")
+            print("But that's not what it is.")
+            barabbas_on = True
+        elif barabbas_on and "barabbas" in question:
+            print("This is the story as I've told it in my gospel.")
+            print("At the feast, Pilate used to release to them one prisoner of their choice. "
+                  "And there was one called Barabbas, chained up with those who'd engaged in rebellion, " 
+                  "who in the insurrection had committed murder. "
+                  "The mob went up and began to ask him to do what he usually did for them. "
+                  "And Pilate answered them, saying, 'Do you want me to release to you the King of the Jews?' " 
+                  "For he realized the chief priests had seized [Jesus] out of jealousy. "
+                  "But the chief priests stirred up the mob, so he would release Barabbas to them instead. "
+                  "And Pilate again answered and said to them, 'So what should I do about the one you call the King of the Jews?' " 
+                  "And they cried out again, 'Crucify him!' And Pilate said, 'What evil has he done?' But they cried out more, " 
+                  "'Crucify him!' And Pilate, wishing to satisfy the mob, released to them Barabbas, "
+                  "and sent Jesus to be whipped and crucified (Mk 15.6-15)")
+        elif "what is it" in question and barabbas_on:
+            print("It's an allegory for the Jewish ritual at Yom Kippur.")
+            print("During the ritual two goats were chosen: ")
+            print("one to be released in the wild containing the sins of Israel, the other to be slaughtered.")
+        elif "what does barabbas mean" in question and barabbas_on:
+            print("Son of the Father in Aramaic.")
+        elif "what were your purposes" in question and barabbas_on:
+            print("Depict one revolutionary against the other, Barabbas the murderous leader of a military revolution.")
+            print("The messiah the people wanted.")
+            print("Vs. Jesus, the spiritual saviour, the messiah as God wanted him to be.")
+        elif "go back" in question:
+            fuck_the_acts()
+        elif question == "help" and not barabbas_on:
+            help(dialogue)
+        elif question == "help" and barabbas_on:
+            help(joined_dialogue)
+        else:
+            print("I don't know that.")
 
 def jesus_not_here_room():
     print("Jesus is not here!!")
@@ -206,4 +268,4 @@ def dead(reason):
     exit(0)
 
 
-start()
+talk_with_mark()
