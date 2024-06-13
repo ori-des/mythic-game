@@ -119,6 +119,8 @@ def fuck_the_acts():
     print("We're going to help you evaluate if they are historical evidence or not.")
     print("Luke will answer your questions, when you're done with him ask for me again.")
 
+    dialogue = ["hello", "who are you", "sources", "how do we know you're not writing history?", "more examples"]
+
     while True:
 
         question = input("> ").lower()
@@ -140,8 +142,10 @@ def fuck_the_acts():
             print("His trials last years not a single night, armies plot to assassinate him and armies come to rescue him.")
             print("Both Paul and Jesus die and resurrect, but after his resurrection Paul goes back to his preaching.")
             print("Paul is then sent to meet the emperor of Rome, something that Jesus never accomplish.")
-        elif "example of other sources" in question:
+        elif "more examples" in question:
             print("")
+        elif question == "help":
+            help(dialogue)
         else:
             print("I cannot help you with that.")
 
@@ -189,10 +193,13 @@ def silver_room():
     print("You win 100 pieces of gold.")
     exit(0)
 
+def help(questions):
+    index = r.randint(0, 4)
+    print(f"{questions[index]}")
+
 def dead(reason):
     print(reason, "You Died.")
     exit(0)
 
 
-#start()
-pick_your_jesus()
+start()
