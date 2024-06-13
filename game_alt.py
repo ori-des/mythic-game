@@ -127,6 +127,21 @@ def fuck_the_acts():
             print("Hello my friend.")
         elif "who are you" in question:
             print("I am Luke.")
+        elif "sources" in question:
+            print("My only historical source was Josephus, used for background context.")
+            print("My other sources were literary. The old testament and Homer.")
+        elif "how do we know you're not writing history?" in question:
+            print("The contradictions. In his letters Paul says that his face was unknown to the churches in Judea until many years after his conversion.")
+            print("And after his conversion he went to Arabia and then Damascus, only returning to Jerusalem after three years.")
+            print("But in my story he interacts with the Jerusalem church from the very beginning, even before his conversion.")
+            print("And he never visits Arabia after his conversion, he just goes to Damascus and back to Jerusalem after a few weeks.")
+            print("Paul's story in the acts parallels Jesus story, but Paul does it in a much more bombastic way than Jesus.")
+            print("He travels across the whole northeastern Mediterranean, Jesus only the Sea of Galilee.")
+            print("His trials last years not a single night, armies plot to assassinate him and armies come to rescue him.")
+            print("Both Paul and Jesus die and resurrect, but after his resurrection Paul goes back to his preaching.")
+            print("Paul is then sent to meet the emperor of Rome, something that Jesus never accomplish.")
+        elif "example of other sources" in question:
+            print("")
         else:
             print("I cannot help you with that.")
 
