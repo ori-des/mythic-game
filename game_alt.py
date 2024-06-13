@@ -220,6 +220,47 @@ def talk_with_mark():
         else:
             print("I don't know that.")
 
+def talk_with_matthew():
+    print("Paul grabs your hand, you feel a bit weird.")
+    print("'It's time for you to meet Matthew traveler.'")
+    print("You feel like you're flying to another destination guided by the apostle.")
+    print("You settle in front of another man, looking like a greek statue.")
+    print("'There you are, let me answer your questions.'")
+
+    dialogue = ["hello", "who are you", "what sources did you use", "what were your intentions", "how do we know your source was mark", "sermon on the mount historical", "go back"]
+
+    while True:
+
+        question = input("> ").lower()
+
+        if question == "hello":
+            print("Hello friend.")
+        elif "who are you" in question:
+            print("I am Matthew, the author of the second gospel.")
+        elif "what sources did you use" in question:
+            print("My source was the gospel of Mark.")
+        elif "what were your intentions" in question:
+            print("I wanted a version of Christianity that was more torah friendly.")
+        elif "how do we know your source was mark" in question:
+            print("I rewrote his gospel to fit my agenda, sometimes I fixed his mistakes"
+                  "and made things more ridiculous in the process."
+                  "Like my interpretation of the donkey passage in Zechariah 9.9."
+                  "I made Jesus enter Jerusalem on two donkeys because I read at as:"
+                  "See, your king comes to you," 
+                  "righteous and victorious,"
+                  "lowly and riding on a donkey,"
+                  "AND on a colt, the foal of a donkey.")
+        elif "sermon on the mount historical" in question:
+            print("There is no reason to believe that.")
+            print("I meticulously crafted it to have a literary structure.")
+            print("It fits within rabbinical discourses on how could the jews fulfill the law without the temple.")
+        elif "go back" in question:
+            talk_with_mark()
+        elif question == "help":
+            help(dialogue)
+        else:
+            print("I can't answer that question.")
+
 def jesus_not_here_room():
     print("Jesus is not here!!")
     print("But you do find the credits for this game.")
