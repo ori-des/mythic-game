@@ -268,4 +268,4 @@ def dead(reason):
     exit(0)
 
 
-talk_with_mark()
+start()
