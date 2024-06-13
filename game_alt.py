@@ -223,7 +223,7 @@ def talk_with_mark():
 def talk_with_matthew():
     print("Paul grabs your hand, you feel a bit weird.")
     print("'It's time for you to meet Matthew traveler.'")
-    print("You feel like you're flying to another destination guided by the apostle.")
+    print("You feel like you're floating to another destination guided by the apostle.")
     print("You settle in front of another man, looking like a greek statue.")
     print("'There you are, let me answer your questions.'")
 
@@ -245,7 +245,8 @@ def talk_with_matthew():
             print("I rewrote his gospel to fit my agenda, sometimes I fixed his mistakes"
                   "and made things more ridiculous in the process."
                   "Like my interpretation of the donkey passage in Zechariah 9.9."
-                  "I made Jesus enter Jerusalem on two donkeys because I read at as:"
+                  "I wanted it to be more faithful to scripture"
+                  "So I made Jesus enter Jerusalem on two donkeys because I read it as:"
                   "See, your king comes to you," 
                   "righteous and victorious,"
                   "lowly and riding on a donkey,"
@@ -258,8 +259,105 @@ def talk_with_matthew():
             talk_with_mark()
         elif question == "help":
             help(dialogue)
+        elif question == "paul":
+            talk_with_luke()
         else:
             print("I can't answer that question.")
+
+def talk_with_luke():
+    print("'Follow me traveler' says the familiar voice of Paul.")
+    print("You cannot clearly see him, but you feel a force guiding you to another area.")
+    print("You're engulfed by the light, and a voice greets you.")
+    print("You've reached Luke's abode.")
+    print("I am him.")
+    print("What's on your mind friend?")
+
+    dialogue = ["hello","who are you", "you writing history", "sources", "example"]
+
+    while True:
+
+        question = input("> ").lower()
+        
+        if question == "hello":
+            print("Hello friend.")
+        elif question == "who are you":
+            print("I am Luke, the author of the third gospel and the acts. We meet again.")
+        elif "you writing history" in question:
+            print("I was pretending to.")
+            print("But I wasn't actually consulting sources.")
+            print("I was just taking from Mark and Matthew and changing it to my liking.")
+            print("What you see is the illusion of historical narration.")
+        elif "sources" in question:
+            print("Mark, Matthew and scripture.")
+        elif "example" in question:
+            print("My story of the healing of the widow's son at Naim.")
+            print("It's a retelling of the same legend told of Elijah in the book of Kings.")
+            print(' Some time later the son of the woman who owned the house became ill.\n' 
+            'He grew worse and worse, and finally stopped breathing. She said to Elijah, “What do you have against me, man of God? \n'
+            'Did you come to remind me of my sin and kill my son?”\n'
+            '“Give me your son,” Elijah replied. He took him from her arms, carried him to the upper room where he was staying, \n'
+            'and laid him on his bed. 20 Then he cried out to the Lord, “Lord my God, have you brought tragedy even on this widow I am staying with, \n' 
+            'by causing her son to die?” 21 Then he stretched himself out on the boy three times and cried out to the Lord, \n'
+            '“Lord my God, let this boy’s life return to him!” \n'
+            'The Lord heard Elijah’s cry, and the boy’s life returned to him, and he lived. \n'
+            'Elijah picked up the child and carried him down from the room into the house. \n'
+            'He gave him to his mother and said, “Look, your son is alive!” \n'
+            'Then the woman said to Elijah, “Now I know that you are a man of God and that the word of the Lord from your mouth is the truth.”\n')
+        elif question == "help":
+            help(dialogue)
+        elif question == "go back":
+            talk_with_matthew()
+        elif question == "paul":
+            talk_with_john()
+        else:
+            print("That's unknown to me.")
+
+def talk_with_john():
+    print("'You are getting close traveler, it's time for you to meet the author of the last gospel'.")
+    print("Paul lifts you up with a force that takes your breath away for a moment, you find yourself in another area.")
+    print("'Hello wanderer' says a polyphonic voice.")
+    print("'I'm John, come witness my signs.'")
+
+    dialogue = ["hello"]
+
+    while True:
+
+        question = input("> ").lower()
+        
+        if question == "hello":
+            print("Hello friend.")
+        elif question == "who are you":
+            print("I am John, or am I the many people that pretend to be John?")
+        elif "is your gospel independent" in question:
+            print("There's no reason to believe that.")
+            print("I clearly know of Mark, I tell the same stories in the same order.")
+            print("I insert the same character in the story as Luke, Martha, Mary's sister.")
+            print("And me and Luke both claim Judas was possesed by Satan.")
+            print("Mark's gospel theme was that Jesus would leave no signs to the jews.")
+            print("Luke's and Matthew's have the resurrection as one sign.")
+            print("My gospel has all the signs!!")
+        elif "sources" in question:
+            print("I also used the old testament to craft my miracle stories.")
+            print("Jesus' first miracle at Cana is turning water into wine.")
+            print("Just like Moses in exodus, where God has him turn water into blood as a sign.")
+            print(" 'If they will not believe even after these two signs, nor listen to you,\nthen you shall take some of the water from the river, "
+                  "and pour it on the dry ground, \nand the water that you took out of the river shall become blood upon the ground.'")
+            print("I turned the last into the first.")
+        elif "historical" in question or "example" in question:
+            print("There is no reason to believe I'm writing history.")
+            print("I'm the most fervent propagandist of them all.")
+            print("I insert the most ridiculous storylines to fit my 'giving signs' purpose.")
+            print("The Doubting Thomas episode for example.")
+            print("Or Lazarus, the beloved disciple.")
+            print("None of the other gospels have heard of him.")
+            print("There's a Lazarus mentioned in Luke I decided to make a character of my story.")
+            print("I made Lazarus very relevant in my gospel, he's the one that witnesses everything, and I cite as my source.")
+            print("He's so important that I turned his resurrection as the reason the Jews killed Jesus.")
+            print("None of this happens in the other gospels, because it is my invention, to fit my purpose.")
+        elif "go back" in question:
+            biblical_sources()
+        else:
+            print("That's unknown to me.")
 
 def jesus_not_here_room():
     print("Jesus is not here!!")
