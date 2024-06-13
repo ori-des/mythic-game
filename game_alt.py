@@ -155,8 +155,12 @@ def fuck_the_acts():
             print("I cannot help you with that.")
 
 def talk_with_mark():
-    print("Welcome my friend.")
-    print("What do you want to know?")
+    print("'Hello friend, this is Paul again.'")
+    print("'You are now gonna talk with Mark about his gospel.'")
+    print("'Like before, ask for me again when you are done.'")
+    print("Paul escorts you to a room, magic seems to bring you in front of another man.")
+    print("'Welcome my friend.'")
+    print("'What do you want to know?'")
 
     dialogue = ["hello", "who are you", "real or myth", "how do we know", "example", "go back"]
     dialogue_unlocked = ["barabbas", "what is it", "what does barabbas mean", "what were your purposes"]
@@ -211,6 +215,8 @@ def talk_with_mark():
             help(dialogue)
         elif question == "help" and barabbas_on:
             help(joined_dialogue)
+        elif question == "paul":
+            talk_with_matthew()
         else:
             print("I don't know that.")
 
@@ -266,6 +272,5 @@ def help(questions):
 def dead(reason):
     print(reason, "You Died.")
     exit(0)
-
 
 start()
