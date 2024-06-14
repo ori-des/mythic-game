@@ -222,9 +222,9 @@ def talk_with_mark():
 
 def talk_with_matthew():
     print("Paul grabs your hand, you feel a bit weird.")
-    print("'It's time for you to meet Matthew traveler.'")
+    print("'It's time for you to meet Matthew, traveler.'")
     print("You feel like you're floating to another destination guided by the apostle.")
-    print("You settle in front of another man, looking like a greek statue.")
+    print("You settle in front of another man, he looks like a greek statue.")
     print("'There you are, let me answer your questions.'")
 
     dialogue = ["hello", "who are you", "what sources did you use", "what were your intentions", "how do we know your source was mark", "sermon on the mount historical", "go back"]
