@@ -365,7 +365,13 @@ def talk_with_john():
 
 def talk_with_paul():
     print("You made it")
-    exit(0)
+    print("From the authors of the gospels you get to know a certain literary version of Jesus.")
+    print("From me you'll get to know another one.")
+    print("He doesn't ride donkeys and is not crucified by Pontius Pilate.")
+    print("He doesn't have beloved disciples called Lazarus.")
+    print("He doesn't perform miraculous healings.")
+    print("No Mary, no Joseph, no Galilee, no Nazareth.")
+
 
 def jesus_not_here_room():
     print("Jesus is not here!!")
