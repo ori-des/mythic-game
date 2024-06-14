@@ -225,7 +225,7 @@ def talk_with_matthew():
     print("'It's time for you to meet Matthew, traveler.'")
     print("You feel like you're floating to another destination guided by the apostle.")
     print("You settle in front of another man, he looks like a greek statue.")
-    print("'There you are, let me answer your questions.'")
+    print("'There you are, let me answer your questions' he says.")
 
     dialogue = ["hello", "who are you", "what sources did you use", "what were your intentions", "how do we know your source was mark", "sermon on the mount historical", "go back"]
 
@@ -267,10 +267,10 @@ def talk_with_matthew():
 def talk_with_luke():
     print("'Follow me traveler' says the familiar voice of Paul.")
     print("You cannot clearly see him, but you feel a force guiding you to another area.")
-    print("You're engulfed by the light, and a voice greets you.")
-    print("You've reached Luke's abode.")
-    print("I am him.")
-    print("What's on your mind friend?")
+    print("You're engulfed by the light, a voice greets you.")
+    print("'You've reached Luke's abode.'")
+    print("'I am him.'")
+    print("'What's on your mind friend?'")
 
     dialogue = ["hello","who are you", "you writing history", "sources", "example"]
 
