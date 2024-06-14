@@ -371,6 +371,19 @@ def talk_with_paul():
     print("He doesn't have beloved disciples called Lazarus.")
     print("He doesn't perform miraculous healings.")
     print("No Mary, no Joseph, no Galilee, no Nazareth.")
+    print("My Jesus story comes from private revelations and hidden messages in scripture.")
+
+    while True:
+
+        question = input("> ").lower()
+
+        if question == "help":
+            help(dialogue)
+        elif question == "hello":
+            print("Hello traveler.")
+        else:
+            print("I have no knowledge of that.")
+
 
 
 def jesus_not_here_room():
