@@ -372,6 +372,17 @@ def talk_with_paul():
     print("He doesn't perform miraculous healings.")
     print("No Mary, no Joseph, no Galilee, no Nazareth.")
     print("My Jesus story comes from private revelations and hidden messages in scripture.")
+    print("From which of these topics do you want to start our conversation?")
+    print("""
+          - Hebrews;
+          - Things Jesus said;
+          - The Eucharist;
+          - Women and sperm;
+          - Brothers of the lord;
+    """)
+
+    dialogue = ["hello", "Hebrews", " Things Jesus said", "The Eucharist", "Women and sperm", "Brothers of the lord", "made my choice", "start (goes back to the start of the game to pick the other paths if you didn't already)"]
+    answers = []
 
     while True:
 
@@ -381,10 +392,97 @@ def talk_with_paul():
             help(dialogue)
         elif question == "hello":
             print("Hello traveler.")
+        elif question == "hebrews":
+            hebrews()
+        elif question == "things jesus said":
+            things_jesus_said()
+        elif question == "the eucharist":
+            the_eucharist()
+        elif question == "women and sperm":
+            women_and_sperm()
+        elif question == "brothers of the lord":
+            brothers_of_the_lord()
+        elif question == "start":
+            start()
+        elif question == "made my choice":
+            pick_your_jesus()
         else:
             print("I have no knowledge of that.")
 
+def hebrews():
+    info_on = False
 
+    while not info_on:
+        
+        question = input("> ").lower()
+
+        if question == "hi":
+            print("Hi")
+        elif question == "bye":
+            print("bye")
+            info_on = True
+        else:
+            print("mmh")
+
+def things_jesus_said():
+    info_on = False
+
+    while not info_on:
+        
+        question = input("> ").lower()
+
+        if question == "hi":
+            print("Hi")
+        elif question == "bye":
+            print("bye")
+            info_on = True
+        else:
+            print("mmh")
+
+def the_eucharist():
+    info_on = False
+
+    while not info_on:
+        
+        question = input("> ").lower()
+
+        if question == "hi":
+            print("Hi")
+        elif question == "bye":
+            print("bye")
+            info_on = True
+        else:
+            print("mmh")
+
+def women_and_sperm():
+    info_on = False
+
+    while not info_on:
+        
+        question = input("> ").lower()
+
+        if question == "hi":
+            print("Hi")
+        elif question == "bye":
+            print("bye")
+            info_on = True
+        else:
+            print("mmh")
+
+def brothers_of_the_lord():
+    info_on = False
+
+    while not info_on:
+        
+        question = input("> ").lower()
+
+        if question == "hi":
+            print("Hi")
+        elif question == "bye":
+            print("bye")
+            info_on = True
+        else:
+            print("mmh")
 
 def jesus_not_here_room():
     print("Jesus is not here!!")
@@ -439,4 +537,4 @@ def dead(reason):
     print(reason, "You Died.")
     exit(0)
 
-start()
+talk_with_paul()
