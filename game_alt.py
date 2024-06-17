@@ -455,22 +455,45 @@ def hebrews():
         elif question == "help":
             help(dialogue)
         else:
-            print("Can't help you with that.")
+            print("I have no knowledge of that.")
 
 def things_jesus_said():
+    print("""
+            How then shall they call on him in whom they have not believed? And how shall they believe in him whom
+        they have not heard? And how shall they hear without a preacher? And how shall they preach, except [a preacher] be sent?
+    """)
+
+    dialogue = ["what did jesus say", "example"]
+
     info_on = False
 
     while not info_on:
         
         question = input("> ").lower()
 
-        if question == "hi":
-            print("Hi")
-        elif question == "bye":
-            print("bye")
+        if "what did jesus say" in question:
+            print("Some might say that some things I said were the words of Jesus. Because they've been made to be that in the gospels.")
+            print("But those were my own words.")
+            print("And the apostles only know of the message of Jesus through scripture and revelation.")
+            print("""
+                    Now to him who is able to establish you in accordance with my gospel, the message I proclaim about Jesus Christ, 
+                in keeping with the revelation of the mystery hidden for long ages past, but now revealed and made known through the prophetic writings by the command of the eternal God, 
+                so that all the Gentiles might come to the obedience that comes from faith to the only wise God be glory forever through Jesus Christ!
+            """)
+        elif question == "example":
+            print("I teach the concept of the Golden Rule many times in my letters.")
+            print("Declaring to love your neighbor as yourself.")
+            print("But I never show any knowledge of Jesus having said this.")
+            print("My only source on that is the leviticus.")
+            print("""
+                  Do not seek revenge or bear a grudge against anyone among your people, but love your neighbour as yourself. I am the Lord.
+            """)
+            
             info_on = True
+        elif question == "help":
+            help(dialogue)
         else:
-            print("mmh")
+            print("I have no knowledge of that.")
 
 def the_eucharist():
     info_on = False
@@ -485,7 +508,7 @@ def the_eucharist():
             print("bye")
             info_on = True
         else:
-            print("mmh")
+            print("I have no knowledge of that.")
 
 def women_and_sperm():
     info_on = False
@@ -500,7 +523,7 @@ def women_and_sperm():
             print("bye")
             info_on = True
         else:
-            print("mmh")
+            print("I have no knowledge of that.")
 
 def brothers_of_the_lord():
     info_on = False
@@ -515,7 +538,7 @@ def brothers_of_the_lord():
             print("bye")
             info_on = True
         else:
-            print("mmh")
+            print("I have no knowledge of that.")
 
 def jesus_not_here_room():
     print("Jesus is not here!!")
