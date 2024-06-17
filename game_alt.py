@@ -410,19 +410,52 @@ def talk_with_paul():
             print("I have no knowledge of that.")
 
 def hebrews():
+    print("""
+            For if He were on earth, He would not be a priest, since there are already priests who
+        offer gifts according to the law, and who only give service to the copy and shadow of heavenly things. 
+    """)
+
+    dialogue = ["What is Hebrews?", "Who is Jesus?"]
+
     info_on = False
 
     while not info_on:
         
         question = input("> ").lower()
 
-        if question == "hi":
-            print("Hi")
-        elif question == "bye":
-            print("bye")
+        if "what is hebrews" in question:
+            print("It is a gospel, written before the canonical ones. The author of Hebrews assumes the temple is still operating.")
+            print("""
+                    The law is only a shadow of the good things that are coming—not the realities themselves. 
+                For this reason it can never, by the same sacrifices repeated endlessly year after year, make perfect those who draw near to worship. 
+                Otherwise, would they not have stopped being offered? For the worshipers would have been cleansed once for all, 
+                and would no longer have felt guilty for their sins. But those sacrifices are an annual reminder of sins.
+                It is impossible for the blood of bulls and goats to take away sins.
+            """)
+        elif "who is jesus" in question:
+            print("Jesus the Son of God is the great high priest who has passed through the heavens.")
+            print("He had to die in heaven for the blood magic of his sacrifice to work.")
+            print("The sacrifices made by the priests on earth are less effective than the celestial ones, because they only serve the copies of the things in heaven.")
+            print("""
+                    Christ, arriving as a High Priest of the good things to come, through a greater and more perfect temple, 
+                the one not made with hands (that is to say, not of [human] construction), and neither through the blood of goats
+                and calves, but through his own blood, he entered into the holy place once and for all, finding eternal redemption.
+
+                    According to the law, all things are cleansed with blood and without bloodshed no forgiveness occurs.
+                And so it was necessary that the copies of the things in the heavens should be cleansed with these, 
+                but the heavenly things themselves with better sacrifices than these.
+
+                For Christ did not go into the holy place made with hands, the antitype of the true one, but into heaven itself, now to appear before the face of God on our behalf. 
+                Nor does he need to present himself time and again, like the high priest does who goes into the holy place year by year with the blood of another.
+
+                 By this testament we have been made holy through the offering of the body of Jesus Christ once and for all.
+            """)
+
             info_on = True
+        elif question == "help":
+            help(dialogue)
         else:
-            print("mmh")
+            print("Can't help you with that.")
 
 def things_jesus_said():
     info_on = False
