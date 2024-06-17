@@ -378,11 +378,12 @@ def talk_with_paul():
           - Hebrews;
           - Things Jesus said;
           - The Eucharist;
+          - Things Jesus did;
           - Women and sperm;
           - Brothers of the lord;
     """)
 
-    dialogue = ["hello", "Hebrews", " Things Jesus said", "The Eucharist", "Women and sperm", "Brothers of the lord", "made my choice", "start (goes back to the start of the game to pick the other paths if you didn't already)"]
+    dialogue = ["hello", "Hebrews", " Things Jesus said", "The Eucharist", "Things Jesus did", "Women and sperm", "Brothers of the lord", "made my choice", "start (goes back to the start of the game to pick the other paths if you didn't already)"]
     answers = []
 
     while True:
@@ -399,6 +400,8 @@ def talk_with_paul():
             things_jesus_said()
         elif question == "the eucharist":
             the_eucharist()
+        elif question == "things jesus did":
+            things_jesus_did()
         elif question == "women and sperm":
             women_and_sperm()
         elif question == "brothers of the lord":
@@ -525,6 +528,29 @@ def the_eucharist():
             info_on = True
         elif question == "help":
             help(dialogue)
+        else:
+            print("I have no knowledge of that.")
+
+def things_jesus_did():
+    print("""
+            We speak a wisdom among the mature (the fully initiated), a wisdom not of this age, nor of the rulers of this age (archontōn tou aiōnos toutou), 
+        who are being abolished, but we speak God’s wisdom, in a mystery, that has been hidden, which God foreordained before the ages [aiōnōn] for our glory, 
+        which none of the rulers of this age (archontōn tou aiōnos toutou) had known. For if they had known it, they would not have crucified the Lord of Glory. 
+        But as it is written, ‘Things which eye saw not, and ear heard not, and which entered not into the heart of a man, those things God prepared for those who love him’. 
+    """)
+
+    
+    info_on = False
+
+    while not info_on:
+        
+        question = input("> ").lower()
+
+        if question == "hi":
+            print("Hi")
+        elif question == "bye":
+            print("bye")
+            info_on = True
         else:
             print("I have no knowledge of that.")
 
