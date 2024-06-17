@@ -512,7 +512,7 @@ def the_eucharist():
         
         question = input("> ").lower()
 
-        if "how did mark change this":
+        if "how did mark change this" in question:
             print("He used this text as a base in which he inserted his characters.")
             print("""
                      While they were eating, Jesus took bread, and when he had given thanks, he broke it and gave it to his disciples, saying, “Take it; this is my body.”
