@@ -497,17 +497,34 @@ def things_jesus_said():
             print("I have no knowledge of that.")
 
 def the_eucharist():
+    print("""
+            For I received from the Lord that which I also delivered to you, that the Lord Jesus in the night in which he was delivered up took bread, 
+            and having given thanks, he broke it and said, ‘This is my body, which is for your sake. Do this in remembrance of me.’ 
+            Likewise also the cup after the eating, saying, ‘This cup is the new testament in my blood. Do this, as often as you drink, in remembrance of me.’ 
+            For as often as you eat this bread, and drink the cup, you proclaim the Lord’s death until he comes.
+    """)
+
+    dialogue = ["How did Mark change this?"]
+
     info_on = False
 
     while not info_on:
         
         question = input("> ").lower()
 
-        if question == "hi":
-            print("Hi")
-        elif question == "bye":
-            print("bye")
+        if "how did mark change this":
+            print("He used this text as a base in which he inserted his characters.")
+            print("""
+                     While they were eating, Jesus took bread, and when he had given thanks, he broke it and gave it to his disciples, saying, “Take it; this is my body.”
+                     Then he took a cup, and when he had given thanks, he gave it to them, and they all drank from it.
+                     “This is my blood of the covenant, which is poured out for many,” he said to them. 
+            """)
+            print("I didn't speak of this as if I was present or as if someone who was told me about it.")
+            print("I explicitly say this I received from the Lord (in revelation).")
+            
             info_on = True
+        elif question == "help":
+            help(dialogue)
         else:
             print("I have no knowledge of that.")
 
