@@ -1,6 +1,7 @@
 from sys import exit
 from time import sleep
 import random as r
+import time
 
 def start():
     print("You're on the quest for the historical jesus.")
@@ -364,7 +365,7 @@ def talk_with_john():
             print("That's unknown to me.")
 
 def talk_with_paul():
-    print("You made it")
+    print("You made it.")
     print("From the authors of the gospels you get to know a certain literary version of Jesus.")
     print("From me you'll get to know another one.")
     print("He doesn't ride donkeys and is not crucified by Pontius Pilate.")
@@ -592,5 +593,11 @@ def help(questions):
 def dead(reason):
     print(reason, "You Died.")
     exit(0)
+
+def fancy_print(string):
+    for char in string:
+        print(char, end="", flush = True)
+        sleep(.03)
+    print(end = "\n")
 
 talk_with_paul()
