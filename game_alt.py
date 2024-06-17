@@ -463,7 +463,7 @@ def things_jesus_said():
         they have not heard? And how shall they hear without a preacher? And how shall they preach, except [a preacher] be sent?
     """)
 
-    dialogue = ["what did jesus say", "example"]
+    dialogue = ["What did Jesus say?", "What's an example?"]
 
     info_on = False
 
@@ -480,7 +480,7 @@ def things_jesus_said():
                 in keeping with the revelation of the mystery hidden for long ages past, but now revealed and made known through the prophetic writings by the command of the eternal God, 
                 so that all the Gentiles might come to the obedience that comes from faith to the only wise God be glory forever through Jesus Christ!
             """)
-        elif question == "example":
+        elif "example" in question:
             print("I teach the concept of the Golden Rule many times in my letters.")
             print("Declaring to love your neighbor as yourself.")
             print("But I never show any knowledge of Jesus having said this.")
@@ -488,7 +488,7 @@ def things_jesus_said():
             print("""
                   Do not seek revenge or bear a grudge against anyone among your people, but love your neighbour as yourself. I am the Lord.
             """)
-            
+
             info_on = True
         elif question == "help":
             help(dialogue)
