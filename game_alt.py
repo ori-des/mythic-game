@@ -534,23 +534,30 @@ def the_eucharist():
 def things_jesus_did():
     print("""
             We speak a wisdom among the mature (the fully initiated), a wisdom not of this age, nor of the rulers of this age (archontōn tou aiōnos toutou), 
-        who are being abolished, but we speak God’s wisdom, in a mystery, that has been hidden, which God foreordained before the ages [aiōnōn] for our glory, 
+        who are being abolished, but we speak God’s wisdom, in a mystery, that has been hidden, which God foreordained before the ages (aiōnōn) for our glory, 
         which none of the rulers of this age (archontōn tou aiōnos toutou) had known. For if they had known it, they would not have crucified the Lord of Glory. 
         But as it is written, ‘Things which eye saw not, and ear heard not, and which entered not into the heart of a man, those things God prepared for those who love him’. 
     """)
 
-    
+    dialogue = ["Who are the rulers of this age?"]
+
     info_on = False
 
     while not info_on:
         
         question = input("> ").lower()
 
-        if question == "hi":
-            print("Hi")
+        if "who are the rulers of this age" in question:
+            print("In the passage above it is mentioned that they are the ones that killed Jesus.")
+            print("The passage says that if they knew the plan of God, they wouldn't have killed him.")
+            print("How can the archons of this age be the Romans or the Jewish elite?")
+            print("Am I wprried about them not wanting to cleanse the sins of all humanity? They either wouldn't have cared if they knew, or went on with it to see if it would have saved all.")
+            print("The archons of this age are Satan and his demons, if they knew that their killing Jesus would save all in God's plan, they wouldn't have done it.")
         elif question == "bye":
             print("bye")
             info_on = True
+        elif question == "help":
+            help(dialogue)
         else:
             print("I have no knowledge of that.")
 
