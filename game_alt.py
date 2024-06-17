@@ -378,12 +378,12 @@ def talk_with_paul():
           - Hebrews;
           - Things Jesus said;
           - The Eucharist;
-          - Things Jesus did;
+          - Rulers of this age;
           - Women and sperm;
           - Brothers of the lord;
     """)
 
-    dialogue = ["hello", "Hebrews", " Things Jesus said", "The Eucharist", "Things Jesus did", "Women and sperm", "Brothers of the lord", "made my choice", "start (goes back to the start of the game to pick the other paths if you didn't already)"]
+    dialogue = ["hello", "Hebrews", " Things Jesus said", "The Eucharist", "Rulers of this age", "Women and sperm", "Brothers of the lord", "made my choice", "start (goes back to the start of the game to pick the other paths if you didn't already)"]
     answers = []
 
     while True:
@@ -400,8 +400,8 @@ def talk_with_paul():
             things_jesus_said()
         elif question == "the eucharist":
             the_eucharist()
-        elif question == "things jesus did":
-            things_jesus_did()
+        elif question == "rulers of this age":
+            rulers_of_this_age()
         elif question == "women and sperm":
             women_and_sperm()
         elif question == "brothers of the lord":
@@ -531,7 +531,7 @@ def the_eucharist():
         else:
             print("I have no knowledge of that.")
 
-def things_jesus_did():
+def rulers_of_this_age():
     print("""
             We speak a wisdom among the mature (the fully initiated), a wisdom not of this age, nor of the rulers of this age (archontōn tou aiōnos toutou), 
         who are being abolished, but we speak God’s wisdom, in a mystery, that has been hidden, which God foreordained before the ages (aiōnōn) for our glory, 
@@ -539,7 +539,7 @@ def things_jesus_did():
         But as it is written, ‘Things which eye saw not, and ear heard not, and which entered not into the heart of a man, those things God prepared for those who love him’. 
     """)
 
-    dialogue = ["Who are the rulers of this age?"]
+    dialogue = ["Who are the rulers of this age?", "Words Paul didn't say"]
 
     info_on = False
 
@@ -553,9 +553,26 @@ def things_jesus_did():
             print("How can the archons of this age be the Romans or the Jewish elite?")
             print("Am I wprried about them not wanting to cleanse the sins of all humanity? They either wouldn't have cared if they knew, or went on with it to see if it would have saved all.")
             print("The archons of this age are Satan and his demons, if they knew that their killing Jesus would save all in God's plan, they wouldn't have done it.")
-        elif question == "bye":
-            print("bye")
+            print("He also says that these rulers are being abolished, the Romans and the Jewish elite were not abolished, and could still be saved by joining Christ.")
+            
             info_on = True
+        elif "words paul didn't say" in question:
+            print("""
+                    For you, brethren, became imitators of the churches of God which are in Judaea in Jesus Christ, 
+                for you also suffered the same things from your own countrymen as they did from the Jews who both killed the Lord Jesus and the prophets, 
+                and drove us out, and pleased not God, and are contrary to all men, forbidding us to speak to the Gentiles that they may be saved, 
+                to fill up their sins for evermore—but the wrath has come upon them to the uttermost.
+            """)
+            print("Here someone tried to make me say that Jesus was killed by the Jews, but it is a clear fabrication.")
+            print("What makes it clear is that I imply here my knowledge of the calamity that befell the jews (the destruction of the temple).")
+            print("But I was probably already dead and gone when that happened.")
+            print("I speak of myself as a Jew, and I consider them part of my own church. I would never damn them this way")
+            print("""
+                    ‘Did God cast off his people? God forbid! For I also am a Jew, of the seed of Abraham, of the tribe of Benjamin’
+
+                    ‘Are they Hebrews? So am I. Are they Israelites? So am I. Are they the seed of Abraham? So am I’
+            """)
+
         elif question == "help":
             help(dialogue)
         else:
