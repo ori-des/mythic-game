@@ -616,6 +616,8 @@ def women():
             """)
             
             info_on = True
+        elif question == "help":
+            help(dialogue)
         else:
             print("I have no knowledge of that.")
 
@@ -652,6 +654,8 @@ def sperm():
             print("But read literally with pesher logic it could be interpreted as God saving up David's sperm until the time to keep his promise of an eternal line came.")
             print("All sorts of things could be stored in heaven, even our own future bodies, even sperm.")
             info_on = True
+        elif question == "help":
+            help(dialogue)
         else:
             print("I have no knowledge of that.")
 
