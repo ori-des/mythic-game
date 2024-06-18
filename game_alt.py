@@ -4,11 +4,11 @@ import random as r
 import time
 
 def start():
-    print("You're on the quest for the historical jesus.")
+    fancy_print("You're on the quest for the historical jesus.")
     # sleep(1)
-    print("You are in a cave with three paths.")
+    fancy_print("You are in a cave with three paths.")
     # sleep(2)
-    print("From what path do you start? North, east or west?")
+    fancy_print("From what path do you start? North, east or west?")
     
     choice = input("> ").lower()
 
@@ -58,38 +58,38 @@ def extrabiblical_sources():
 
     index = r.randint(0, 8)
 
-    print("The path leads you to a dining hall.")
+    fancy_print("The path leads you to a dining hall.")
     #sleep(1)
-    print("Nine men are sitting around a table.")
+    fancy_print("Nine men are sitting around a table.")
     #sleep(1)
-    print("""They don't really bother to invite you to sit down, 
+    fancy_print("""They don't really bother to invite you to sit down, 
     but you can see there's an empty chair and plate for you.""")
     #sleep(1)
-    print(f"""You sit next to one of them, and he presents himself.
+    fancy_print(f"""You sit next to one of them, and he presents himself.
     'Hello friend, my name is {sources[index]}'""")
 
     while True:
         dialogue = input("> ").lower()
 
         if "hello" in dialogue:
-            print("Greetings! What do you want to know my friend?")
+            fancy_print("Greetings! What do you want to know my friend?")
         elif "jesus" and "exist" in dialogue:
-            print(f"{phrases[index]}")
+            fancy_print(f"{phrases[index]}")
         elif "change seat" in dialogue:
             index = r.randint(0, 8)
-            print(f"Hello friend, I'm {sources[index]}.")
+            fancy_print(f"Hello friend, I'm {sources[index]}.")
         elif "when" and "written" in dialogue:
-            print(f"Around the year {dates[index]}.")
+            fancy_print(f"Around the year {dates[index]}.")
         elif "go back" in dialogue:
             start()
         elif "made" and "choice" in dialogue:
             pick_your_jesus()
         else:
-            print("I don't know that.")
+            fancy_print("I don't know that.")
 
 def biblical_sources():
-    print("The path you chose brings you to a tall door.")
-    print("What do you do?")
+    fancy_print("The path you chose brings you to a tall door.")
+    fancy_print("What do you do?")
 
     door_open = False
 
@@ -98,27 +98,27 @@ def biblical_sources():
         action = input("> ").lower()
 
         if 'knock' in action:
-            print("You hear someone screaming, 'Come on in, the door is open!'")
+            fancy_print("You hear someone screaming, 'Come on in, the door is open!'")
         elif action == 'jesus christ':
-            print("The door opens with a loud creeking sound.")
+            fancy_print("The door opens with a loud creeking sound.")
             door_open = True
         elif 'look' and 'door' in action:
-            print("It's a very sturdy door. There's some writing on it.")
+            fancy_print("It's a very sturdy door. There's some writing on it.")
         elif 'read' and 'writing' in action:
-            print("The writing says 'λόγος'")
+            fancy_print("The writing says 'λόγος'")
         elif action == 'enter' and door_open:
-            print("You enter the library.")
+            fancy_print("You enter the library.")
             fuck_the_acts()
         else:
-            print("I cannot do that.")
+            fancy_print("I cannot do that.")
 
 def fuck_the_acts():
-    print("Welcome friend, I'm Paul.")
-    print("I'm here to guide you through your journey.")
-    print("You will first hear about the Acts of the Apostles.")
-    print("Traditionally attributed to Luke the evangelist.")
-    print("We're going to help you evaluate if they are historical evidence or not.")
-    print("Luke will answer your questions, when you're done with him ask for me again.")
+    fancy_print("Welcome friend, I'm Paul.")
+    fancy_print("I'm here to guide you through your journey.")
+    fancy_print("You will first hear about the Acts of the Apostles.")
+    fancy_print("Traditionally attributed to Luke the evangelist.")
+    fancy_print("We're going to help you evaluate if they are historical evidence or not.")
+    fancy_print("Luke will answer your questions, when you're done with him ask for me again.")
 
     dialogue = ["hello", "who are you", "sources", "how do we know you're not writing history?", "more examples"]
 
@@ -127,41 +127,41 @@ def fuck_the_acts():
         question = input("> ").lower()
 
         if question == "hello":
-            print("Hello my friend.")
+            fancy_print("Hello my friend.")
         elif "who are you" in question:
-            print("I am Luke.")
+            fancy_print("I am Luke.")
         elif "sources" in question:
-            print("My only historical source was Josephus, used for background context.")
-            print("My other sources were literary. The old testament and Homer.")
+            fancy_print("My only historical source was Josephus, used for background context.")
+            fancy_print("My other sources were literary. The old testament and Homer.")
         elif "how do we know you're not writing history?" in question:
-            print("The contradictions. In his letters Paul says that his face was unknown to the churches in Judea until many years after his conversion.")
-            print("And after his conversion he went to Arabia and then Damascus, only returning to Jerusalem after three years.")
-            print("But in my story he interacts with the Jerusalem church from the very beginning, even before his conversion.")
-            print("And he never visits Arabia after his conversion, he just goes to Damascus and back to Jerusalem after a few weeks.")
-            print("Paul's story in the acts parallels Jesus story, but Paul does it in a much more bombastic way than Jesus.")
-            print("He travels across the whole northeastern Mediterranean, Jesus only the Sea of Galilee.")
-            print("His trials last years not a single night, armies plot to assassinate him and armies come to rescue him.")
-            print("Both Paul and Jesus die and resurrect, but after his resurrection Paul goes back to his preaching.")
-            print("Paul is then sent to meet the emperor of Rome, something that Jesus never accomplish.")
+            fancy_print("The contradictions. In his letters Paul says that his face was unknown to the churches in Judea until many years after his conversion.")
+            fancy_print("And after his conversion he went to Arabia and then Damascus, only returning to Jerusalem after three years.")
+            fancy_print("But in my story he interacts with the Jerusalem church from the very beginning, even before his conversion.")
+            fancy_print("And he never visits Arabia after his conversion, he just goes to Damascus and back to Jerusalem after a few weeks.")
+            fancy_print("Paul's story in the acts parallels Jesus story, but Paul does it in a much more bombastic way than Jesus.")
+            fancy_print("He travels across the whole northeastern Mediterranean, Jesus only the Sea of Galilee.")
+            fancy_print("His trials last years not a single night, armies plot to assassinate him and armies come to rescue him.")
+            fancy_print("Both Paul and Jesus die and resurrect, but after his resurrection Paul goes back to his preaching.")
+            fancy_print("Paul is then sent to meet the emperor of Rome, something that Jesus never accomplish.")
         elif "more examples" in question:
-            print("I take elements from the book of Tobit.")
-            print("You can figure it out from the language I use.")
-            print("When Paul is cured from his blindness we are told that 'the blindness fell from his eyes like scales'.")
-            print("In Tobit Rafael is told by God to 'scale away (lepisai)' Tobias's blindess. My use of language for Paul's only makes sense as an allusion to this.")
+            fancy_print("I take elements from the book of Tobit.")
+            fancy_print("You can figure it out from the language I use.")
+            fancy_print("When Paul is cured from his blindness we are told that 'the blindness fell from his eyes like scales'.")
+            fancy_print("In Tobit Rafael is told by God to 'scale away (lepisai)' Tobias's blindess. My use of language for Paul's only makes sense as an allusion to this.")
         elif question == "help":
             help(dialogue)
         elif question == "paul":
             talk_with_mark()
         else:
-            print("I cannot help you with that.")
+            fancy_print("I cannot help you with that.")
 
 def talk_with_mark():
-    print("'Hello friend, this is Paul again.'")
-    print("'You are now gonna talk with Mark about his gospel.'")
-    print("'Like before, ask for me again when you are done.'")
-    print("Paul escorts you to a room, magic seems to bring you in front of another man.")
-    print("'Welcome my friend.'")
-    print("'What do you want to know?'")
+    fancy_print("'Hello friend, this is Paul again.'")
+    fancy_print("'You are now gonna talk with Mark about his gospel.'")
+    fancy_print("'Like before, ask for me again when you are done.'")
+    fancy_print("Paul escorts you to a room, magic seems to bring you in front of another man.")
+    fancy_print("'Welcome my friend.'")
+    fancy_print("'What do you want to know?'")
 
     dialogue = ["hello", "who are you", "real or myth", "how do we know", "example", "go back"]
     dialogue_unlocked = ["barabbas", "what is it", "what does barabbas mean", "what were your purposes"]
@@ -174,22 +174,22 @@ def talk_with_mark():
         question = input("> ").lower()
 
         if question == "hello":
-            print("Hello my friend.")
+            fancy_print("Hello my friend.")
         elif "who are you" in question:
-            print("I am Mark, the author of the first gospel.")
+            fancy_print("I am Mark, the author of the first gospel.")
         elif "real or myth" in question:
-            print("I was writing a myth for my own purposes.")
+            fancy_print("I was writing a myth for my own purposes.")
         elif "how" and "know" in question:
-            print("By analyizing my text, I can give you an example if you wish.")
+            fancy_print("By analyizing my text, I can give you an example if you wish.")
         elif "example" in question:
-            print("You are surely familiar with the episode at the crucifixion,"
+            fancy_print("You are surely familiar with the episode at the crucifixion,"
                   "where Pilate makes the people chose between Jesus and Barabbas")
-            print("At first glance it might seem like some historical truth under the myth.")
-            print("But that's not what it is.")
+            fancy_print("At first glance it might seem like some historical truth under the myth.")
+            fancy_print("But that's not what it is.")
             barabbas_on = True
         elif barabbas_on and "barabbas" in question:
-            print("This is the story as I've told it in my gospel.")
-            print("At the feast, Pilate used to release to them one prisoner of their choice. "
+            fancy_print("This is the story as I've told it in my gospel.")
+            fancy_print("At the feast, Pilate used to release to them one prisoner of their choice. "
                   "And there was one called Barabbas, chained up with those who'd engaged in rebellion, " 
                   "who in the insurrection had committed murder. "
                   "The mob went up and began to ask him to do what he usually did for them. "
@@ -201,15 +201,15 @@ def talk_with_mark():
                   "'Crucify him!' And Pilate, wishing to satisfy the mob, released to them Barabbas, "
                   "and sent Jesus to be whipped and crucified (Mk 15.6-15)")
         elif "what is it" in question and barabbas_on:
-            print("It's an allegory for the Jewish ritual at Yom Kippur.")
-            print("During the ritual two goats were chosen: ")
-            print("one to be released in the wild containing the sins of Israel, the other to be slaughtered.")
+            fancy_print("It's an allegory for the Jewish ritual at Yom Kippur.")
+            fancy_print("During the ritual two goats were chosen: ")
+            fancy_print("one to be released in the wild containing the sins of Israel, the other to be slaughtered.")
         elif "what does barabbas mean" in question and barabbas_on:
-            print("Son of the Father in Aramaic.")
+            fancy_print("Son of the Father in Aramaic.")
         elif "what were your purposes" in question and barabbas_on:
-            print("Depict one revolutionary against the other, Barabbas the murderous leader of a military revolution.")
-            print("The messiah the people wanted.")
-            print("Vs. Jesus, the spiritual saviour, the messiah as God wanted him to be.")
+            fancy_print("Depict one revolutionary against the other, Barabbas the murderous leader of a military revolution.")
+            fancy_print("The messiah the people wanted.")
+            fancy_print("Vs. Jesus, the spiritual saviour, the messiah as God wanted him to be.")
         elif "go back" in question:
             fuck_the_acts()
         elif question == "help" and not barabbas_on:
@@ -219,14 +219,14 @@ def talk_with_mark():
         elif question == "paul":
             talk_with_matthew()
         else:
-            print("I don't know that.")
+            fancy_print("I don't know that.")
 
 def talk_with_matthew():
-    print("Paul grabs your hand, you feel a bit weird.")
-    print("'It's time for you to meet Matthew, traveler.'")
-    print("You feel like you're floating to another destination guided by the apostle.")
-    print("You settle in front of another man, he looks like a greek statue.")
-    print("'There you are, let me answer your questions' he says.")
+    fancy_print("Paul grabs your hand, you feel a bit weird.")
+    fancy_print("'It's time for you to meet Matthew, traveler.'")
+    fancy_print("You feel like you're floating to another destination guided by the apostle.")
+    fancy_print("You settle in front of another man, he looks like a greek statue.")
+    fancy_print("'There you are, let me answer your questions' he says.")
 
     dialogue = ["hello", "who are you", "what sources did you use", "what were your intentions", "how do we know your source was mark", "sermon on the mount historical", "go back"]
 
@@ -235,15 +235,15 @@ def talk_with_matthew():
         question = input("> ").lower()
 
         if question == "hello":
-            print("Hello friend.")
+            fancy_print("Hello friend.")
         elif "who are you" in question:
-            print("I am Matthew, the author of the second gospel.")
+            fancy_print("I am Matthew, the author of the second gospel.")
         elif "what sources did you use" in question:
-            print("My source was the gospel of Mark.")
+            fancy_print("My source was the gospel of Mark.")
         elif "what were your intentions" in question:
-            print("I wanted a version of Christianity that was more torah friendly.")
+            fancy_print("I wanted a version of Christianity that was more torah friendly.")
         elif "how do we know your source was mark" in question:
-            print("I rewrote his gospel to fit my agenda, sometimes I fixed his mistakes"
+            fancy_print("I rewrote his gospel to fit my agenda, sometimes I fixed his mistakes"
                   "and made things more ridiculous in the process."
                   "Like my interpretation of the donkey passage in Zechariah 9.9."
                   "I wanted it to be more faithful to scripture"
@@ -253,9 +253,9 @@ def talk_with_matthew():
                   "lowly and riding on a donkey,"
                   "AND on a colt, the foal of a donkey.")
         elif "sermon on the mount historical" in question:
-            print("There is no reason to believe that.")
-            print("I meticulously crafted it to have a literary structure.")
-            print("It fits within rabbinical discourses on how could the jews fulfill the law without the temple.")
+            fancy_print("There is no reason to believe that.")
+            fancy_print("I meticulously crafted it to have a literary structure.")
+            fancy_print("It fits within rabbinical discourses on how could the jews fulfill the law without the temple.")
         elif "go back" in question:
             talk_with_mark()
         elif question == "help":
@@ -263,15 +263,15 @@ def talk_with_matthew():
         elif question == "paul":
             talk_with_luke()
         else:
-            print("I can't answer that question.")
+            fancy_print("I can't answer that question.")
 
 def talk_with_luke():
-    print("'Follow me traveler' says the familiar voice of Paul.")
-    print("You cannot clearly see him, but you feel a force guiding you to another area.")
-    print("You're engulfed by the light, a voice greets you.")
-    print("'You've reached Luke's abode.'")
-    print("'I am him.'")
-    print("'What's on your mind friend?'")
+    fancy_print("'Follow me traveler' says the familiar voice of Paul.")
+    fancy_print("You cannot clearly see him, but you feel a force guiding you to another area.")
+    fancy_print("You're engulfed by the light, a voice greets you.")
+    fancy_print("'You've reached Luke's abode.'")
+    fancy_print("'I am him.'")
+    fancy_print("'What's on your mind friend?'")
 
     dialogue = ["hello","who are you", "you writing history", "sources", "example"]
 
@@ -280,20 +280,20 @@ def talk_with_luke():
         question = input("> ").lower()
         
         if question == "hello":
-            print("Hello friend.")
+            fancy_print("Hello friend.")
         elif question == "who are you":
-            print("I am Luke, the author of the third gospel and the acts. We meet again.")
+            fancy_print("I am Luke, the author of the third gospel and the acts. We meet again.")
         elif "you writing history" in question:
-            print("I was pretending to.")
-            print("But I wasn't actually consulting sources.")
-            print("I was just taking from Mark and Matthew and changing it to my liking.")
-            print("What you see is the illusion of historical narration.")
+            fancy_print("I was pretending to.")
+            fancy_print("But I wasn't actually consulting sources.")
+            fancy_print("I was just taking from Mark and Matthew and changing it to my liking.")
+            fancy_print("What you see is the illusion of historical narration.")
         elif "sources" in question:
-            print("Mark, Matthew and scripture.")
+            fancy_print("Mark, Matthew and scripture.")
         elif "example" in question:
-            print("My story of the healing of the widow's son at Naim.")
-            print("It's a retelling of the same legend told of Elijah in the book of Kings.")
-            print(' Some time later the son of the woman who owned the house became ill.\n' 
+            fancy_print("My story of the healing of the widow's son at Naim.")
+            fancy_print("It's a retelling of the same legend told of Elijah in the book of Kings.")
+            fancy_print(' Some time later the son of the woman who owned the house became ill.\n' 
             'He grew worse and worse, and finally stopped breathing. She said to Elijah, “What do you have against me, man of God? \n'
             'Did you come to remind me of my sin and kill my son?”\n'
             '“Give me your son,” Elijah replied. He took him from her arms, carried him to the upper room where he was staying, \n'
@@ -311,13 +311,13 @@ def talk_with_luke():
         elif question == "paul":
             talk_with_john()
         else:
-            print("That's unknown to me.")
+            fancy_print("That's unknown to me.")
 
 def talk_with_john():
-    print("'You are getting close traveler, it's time for you to meet the author of the last gospel'.")
-    print("Paul lifts you up with a force that takes your breath away for a moment, you find yourself in another area.")
-    print("'Hello wanderer' says a polyphonic voice.")
-    print("'I'm John, come witness my signs.'")
+    fancy_print("'You are getting close traveler, it's time for you to meet the author of the last gospel'.")
+    fancy_print("Paul lifts you up with a force that takes your breath away for a moment, you find yourself in another area.")
+    fancy_print("'Hello wanderer' says a polyphonic voice.")
+    fancy_print("'I'm John, come witness my signs.'")
 
     dialogue = ["hello", "who are you", "is your gospel independent", "sources", "historical", "example", "go back"]
 
@@ -326,35 +326,35 @@ def talk_with_john():
         question = input("> ").lower()
         
         if question == "hello":
-            print("Hello friend.")
+            fancy_print("Hello friend.")
         elif question == "who are you":
-            print("I am John, or am I the many people that pretend to be John?")
+            fancy_print("I am John, or am I the many people that pretend to be John?")
         elif "is your gospel independent" in question:
-            print("There's no reason to believe that.")
-            print("I clearly know of Mark, I tell the same stories in the same order.")
-            print("I insert the same character in the story as Luke, Martha, Mary's sister.")
-            print("And me and Luke both claim Judas was possesed by Satan.")
-            print("Mark's gospel theme was that Jesus would leave no signs to the jews.")
-            print("Luke's and Matthew's have the resurrection as one sign.")
-            print("My gospel has all the signs!!")
+            fancy_print("There's no reason to believe that.")
+            fancy_print("I clearly know of Mark, I tell the same stories in the same order.")
+            fancy_print("I insert the same character in the story as Luke, Martha, Mary's sister.")
+            fancy_print("And me and Luke both claim Judas was possesed by Satan.")
+            fancy_print("Mark's gospel theme was that Jesus would leave no signs to the jews.")
+            fancy_print("Luke's and Matthew's have the resurrection as one sign.")
+            fancy_print("My gospel has all the signs!!")
         elif "sources" in question:
-            print("I also used the old testament to craft my miracle stories.")
-            print("Jesus' first miracle at Cana is turning water into wine.")
-            print("Just like Moses in exodus, where God has him turn water into blood as a sign.")
-            print(" 'If they will not believe even after these two signs, nor listen to you,\nthen you shall take some of the water from the river, "
+            fancy_print("I also used the old testament to craft my miracle stories.")
+            fancy_print("Jesus' first miracle at Cana is turning water into wine.")
+            fancy_print("Just like Moses in exodus, where God has him turn water into blood as a sign.")
+            fancy_print(" 'If they will not believe even after these two signs, nor listen to you,\nthen you shall take some of the water from the river, "
                   "and pour it on the dry ground, \nand the water that you took out of the river shall become blood upon the ground.'")
-            print("I turned the last into the first.")
+            fancy_print("I turned the last into the first.")
         elif "historical" in question or "example" in question:
-            print("There is no reason to believe I'm writing history.")
-            print("I'm the most fervent propagandist of them all.")
-            print("I insert the most ridiculous storylines to fit my 'giving signs' purpose.")
-            print("The Doubting Thomas episode for example.")
-            print("Or Lazarus, the beloved disciple.")
-            print("None of the other gospels have heard of him.")
-            print("There's a Lazarus mentioned in Luke I decided to make a character of my story.")
-            print("I made Lazarus very relevant in my gospel, he's the one that witnesses everything, and I cite as my source.")
-            print("He's so important that I turned his resurrection as the reason the Jews killed Jesus.")
-            print("None of this happens in the other gospels, because it is my invention, to fit my purpose.")
+            fancy_print("There is no reason to believe I'm writing history.")
+            fancy_print("I'm the most fervent propagandist of them all.")
+            fancy_print("I insert the most ridiculous storylines to fit my 'giving signs' purpose.")
+            fancy_print("The Doubting Thomas episode for example.")
+            fancy_print("Or Lazarus, the beloved disciple.")
+            fancy_print("None of the other gospels have heard of him.")
+            fancy_print("There's a Lazarus mentioned in Luke I decided to make a character of my story.")
+            fancy_print("I made Lazarus very relevant in my gospel, he's the one that witnesses everything, and I cite as my source.")
+            fancy_print("He's so important that I turned his resurrection as the reason the Jews killed Jesus.")
+            fancy_print("None of this happens in the other gospels, because it is my invention, to fit my purpose.")
         elif question == "go back":
             talk_with_luke()
         elif question == "paul":
@@ -362,19 +362,19 @@ def talk_with_john():
         elif question == "help":
             help(dialogue)
         else:
-            print("That's unknown to me.")
+            fancy_print("That's unknown to me.")
 
 def talk_with_paul():
-    print("You made it.")
-    print("From the authors of the gospels you get to know a certain literary version of Jesus.")
-    print("From me you'll get to know another one.")
-    print("He doesn't ride donkeys and is not crucified by Pontius Pilate.")
-    print("He doesn't have beloved disciples called Lazarus.")
-    print("He doesn't perform miraculous healings.")
-    print("No Mary, no Joseph, no Galilee, no Nazareth.")
-    print("My Jesus story comes from private revelations and hidden messages in scripture.")
-    print("From which of these topics do you want to start our conversation?")
-    print("""
+    fancy_print("You made it.")
+    fancy_print("From the authors of the gospels you get to know a certain literary version of Jesus.")
+    fancy_print("From me you'll get to know another one.")
+    fancy_print("He doesn't ride donkeys and is not crucified by Pontius Pilate.")
+    fancy_print("He doesn't have beloved disciples called Lazarus.")
+    fancy_print("He doesn't perform miraculous healings.")
+    fancy_print("No Mary, no Joseph, no Galilee, no Nazareth.")
+    fancy_print("My Jesus story comes from private revelations and hidden messages in scripture.")
+    fancy_print("From which of these topics do you want to start our conversation?")
+    fancy_print("""
           - Hebrews;
           - Things Jesus said;
           - The Eucharist;
@@ -394,7 +394,7 @@ def talk_with_paul():
         if question == "help":
             help(dialogue)
         elif question == "hello":
-            print("Hello traveler.")
+            fancy_print("Hello traveler.")
         elif question == "hebrews":
             hebrews()
         elif question == "things jesus said":
@@ -414,10 +414,10 @@ def talk_with_paul():
         elif question == "made my choice":
             pick_your_jesus()
         else:
-            print("I have no knowledge of that.")
+            fancy_print("I have no knowledge of that.")
 
 def hebrews():
-    print("""
+    fancy_print("""
             For if He were on earth, He would not be a priest, since there are already priests who
         offer gifts according to the law, and who only give service to the copy and shadow of heavenly things. 
     """)
@@ -431,8 +431,8 @@ def hebrews():
         question = input("> ").lower()
 
         if "what is hebrews" in question:
-            print("It is a gospel, written before the canonical ones. The author of Hebrews assumes the temple is still operating.")
-            print("""
+            fancy_print("It is a gospel, written before the canonical ones. The author of Hebrews assumes the temple is still operating.")
+            fancy_print("""
                     The law is only a shadow of the good things that are coming—not the realities themselves. 
                 For this reason it can never, by the same sacrifices repeated endlessly year after year, make perfect those who draw near to worship. 
                 Otherwise, would they not have stopped being offered? For the worshipers would have been cleansed once for all, 
@@ -440,10 +440,10 @@ def hebrews():
                 It is impossible for the blood of bulls and goats to take away sins.
             """)
         elif "who is jesus" in question:
-            print("Jesus the Son of God is the great high priest who has passed through the heavens.")
-            print("He had to die in heaven for the blood magic of his sacrifice to work.")
-            print("The sacrifices made by the priests on earth are less effective than the celestial ones, because they only serve the copies of the things in heaven.")
-            print("""
+            fancy_print("Jesus the Son of God is the great high priest who has passed through the heavens.")
+            fancy_print("He had to die in heaven for the blood magic of his sacrifice to work.")
+            fancy_print("The sacrifices made by the priests on earth are less effective than the celestial ones, because they only serve the copies of the things in heaven.")
+            fancy_print("""
                     Christ, arriving as a High Priest of the good things to come, through a greater and more perfect temple, 
                 the one not made with hands (that is to say, not of [human] construction), and neither through the blood of goats
                 and calves, but through his own blood, he entered into the holy place once and for all, finding eternal redemption.
@@ -462,10 +462,10 @@ def hebrews():
         elif question == "help":
             help(dialogue)
         else:
-            print("I have no knowledge of that.")
+            fancy_print("I have no knowledge of that.")
 
 def things_jesus_said():
-    print("""
+    fancy_print("""
             How then shall they call on him in whom they have not believed? And how shall they believe in him whom
         they have not heard? And how shall they hear without a preacher? And how shall they preach, except [a preacher] be sent?
     """)
@@ -479,20 +479,20 @@ def things_jesus_said():
         question = input("> ").lower()
 
         if "what did jesus say" in question:
-            print("Some might say that some things I said were the words of Jesus. Because they've been made to be that in the gospels.")
-            print("But those were my own words.")
-            print("And the apostles only know of the message of Jesus through scripture and revelation.")
-            print("""
+            fancy_print("Some might say that some things I said were the words of Jesus. Because they've been made to be that in the gospels.")
+            fancy_print("But those were my own words.")
+            fancy_print("And the apostles only know of the message of Jesus through scripture and revelation.")
+            fancy_print("""
                     Now to him who is able to establish you in accordance with my gospel, the message I proclaim about Jesus Christ, 
                 in keeping with the revelation of the mystery hidden for long ages past, but now revealed and made known through the prophetic writings by the command of the eternal God, 
                 so that all the Gentiles might come to the obedience that comes from faith to the only wise God be glory forever through Jesus Christ!
             """)
         elif "example" in question:
-            print("I teach the concept of the Golden Rule many times in my letters.")
-            print("Declaring to love your neighbor as yourself.")
-            print("But I never show any knowledge of Jesus having said this.")
-            print("My only source on that is the leviticus.")
-            print("""
+            fancy_print("I teach the concept of the Golden Rule many times in my letters.")
+            fancy_print("Declaring to love your neighbor as yourself.")
+            fancy_print("But I never show any knowledge of Jesus having said this.")
+            fancy_print("My only source on that is the leviticus.")
+            fancy_print("""
                   Do not seek revenge or bear a grudge against anyone among your people, but love your neighbour as yourself. I am the Lord.
             """)
 
@@ -500,10 +500,10 @@ def things_jesus_said():
         elif question == "help":
             help(dialogue)
         else:
-            print("I have no knowledge of that.")
+            fancy_print("I have no knowledge of that.")
 
 def the_eucharist():
-    print("""
+    fancy_print("""
             For I received from the Lord that which I also delivered to you, that the Lord Jesus in the night in which he was delivered up took bread, 
             and having given thanks, he broke it and said, ‘This is my body, which is for your sake. Do this in remembrance of me.’ 
             Likewise also the cup after the eating, saying, ‘This cup is the new testament in my blood. Do this, as often as you drink, in remembrance of me.’ 
@@ -519,23 +519,23 @@ def the_eucharist():
         question = input("> ").lower()
 
         if "how did mark change this" in question:
-            print("He used this text as a base in which he inserted his characters.")
-            print("""
+            fancy_print("He used this text as a base in which he inserted his characters.")
+            fancy_print("""
                      While they were eating, Jesus took bread, and when he had given thanks, he broke it and gave it to his disciples, saying, “Take it; this is my body.”
                      Then he took a cup, and when he had given thanks, he gave it to them, and they all drank from it.
                      “This is my blood of the covenant, which is poured out for many,” he said to them. 
             """)
-            print("I didn't speak of this as if I was present or as if someone who was told me about it.")
-            print("I explicitly say this I received from the Lord (in revelation).")
+            fancy_print("I didn't speak of this as if I was present or as if someone who was told me about it.")
+            fancy_print("I explicitly say this I received from the Lord (in revelation).")
             
             info_on = True
         elif question == "help":
             help(dialogue)
         else:
-            print("I have no knowledge of that.")
+            fancy_print("I have no knowledge of that.")
 
 def rulers_of_this_age():
-    print("""
+    fancy_print("""
             We speak a wisdom among the mature (the fully initiated), a wisdom not of this age, nor of the rulers of this age (archontōn tou aiōnos toutou), 
         who are being abolished, but we speak God’s wisdom, in a mystery, that has been hidden, which God foreordained before the ages (aiōnōn) for our glory, 
         which none of the rulers of this age (archontōn tou aiōnos toutou) had known. For if they had known it, they would not have crucified the Lord of Glory. 
@@ -551,26 +551,26 @@ def rulers_of_this_age():
         question = input("> ").lower()
 
         if "who are the rulers of this age" in question:
-            print("In the passage above it is mentioned that they are the ones that killed Jesus.")
-            print("The passage says that if they knew the plan of God, they wouldn't have killed him.")
-            print("How can the archons of this age be the Romans or the Jewish elite?")
-            print("Am I wprried about them not wanting to cleanse the sins of all humanity? They either wouldn't have cared if they knew, or went on with it to see if it would have saved all.")
-            print("The archons of this age are Satan and his demons, if they knew that their killing Jesus would save all in God's plan, they wouldn't have done it.")
-            print("He also says that these rulers are being abolished, the Romans and the Jewish elite were not abolished, and could still be saved by joining Christ.")
+            fancy_print("In the passage above it is mentioned that they are the ones that killed Jesus.")
+            fancy_print("The passage says that if they knew the plan of God, they wouldn't have killed him.")
+            fancy_print("How can the archons of this age be the Romans or the Jewish elite?")
+            fancy_print("Am I wprried about them not wanting to cleanse the sins of all humanity? They either wouldn't have cared if they knew, or went on with it to see if it would have saved all.")
+            fancy_print("The archons of this age are Satan and his demons, if they knew that their killing Jesus would save all in God's plan, they wouldn't have done it.")
+            fancy_print("He also says that these rulers are being abolished, the Romans and the Jewish elite were not abolished, and could still be saved by joining Christ.")
             
             info_on = True
         elif "words paul didn't say" in question:
-            print("""
+            fancy_print("""
                     For you, brethren, became imitators of the churches of God which are in Judaea in Jesus Christ, 
                 for you also suffered the same things from your own countrymen as they did from the Jews who both killed the Lord Jesus and the prophets, 
                 and drove us out, and pleased not God, and are contrary to all men, forbidding us to speak to the Gentiles that they may be saved, 
                 to fill up their sins for evermore—but the wrath has come upon them to the uttermost.
             """)
-            print("Here someone tried to make me say that Jesus was killed by the Jews, but it is a clear fabrication.")
-            print("What makes it clear is that I imply here my knowledge of the calamity that befell the jews (the destruction of the temple).")
-            print("But I was probably already dead and gone when that happened.")
-            print("I speak of myself as a Jew, and I consider them part of my own church. I would never damn them this way")
-            print("""
+            fancy_print("Here someone tried to make me say that Jesus was killed by the Jews, but it is a clear fabrication.")
+            fancy_print("What makes it clear is that I imply here my knowledge of the calamity that befell the jews (the destruction of the temple).")
+            fancy_print("But I was probably already dead and gone when that happened.")
+            fancy_print("I speak of myself as a Jew, and I consider them part of my own church. I would never damn them this way")
+            fancy_print("""
                     ‘Did God cast off his people? God forbid! For I also am a Jew, of the seed of Abraham, of the tribe of Benjamin’
 
                     ‘Are they Hebrews? So am I. Are they Israelites? So am I. Are they the seed of Abraham? So am I’
@@ -578,10 +578,10 @@ def rulers_of_this_age():
         elif question == "help":
             help(dialogue)
         else:
-            print("I have no knowledge of that.")
+            fancy_print("I have no knowledge of that.")
 
 def women():
-    print("""
+    fancy_print("""
             If you are Christ’s, then you [like him] are the sperm of Abraham, heirs according to the promise.
         And I say that as long as the heir is a child, he’s no different from a slave. Even though he is lord of all, he is under guardians and stewards until [the day] the father has foreordained.
         And we, too, were enslaved under the elements of the universe when we were children. 
@@ -598,17 +598,17 @@ def women():
         question = input("> ").lower()
 
         if "made from a woman" in question:
-            print("""
+            fancy_print("""
                     For it is written, Abraham had two sons, one from a slave woman and one from a free woman,
                 but the one from the slave woman was born according to the flesh, and the one from the free woman by the promise.
                 Which things are said allegorically, for these [women] are the two testaments, the first being the one from Mount Sinai, which gives birth to slavery. 
                 That’s Hagar—Hagar meaning Mount Sinai in Arabia, which corresponds to Jerusalem now, for she is enslaved with her children. 
                 But the Jerusalem above is free, and she is our mother.
             """)
-            print("I'm talking here about allegorical women. There's two Jerusalems, one is on earth, and it's enslaved, the other is in Heaven, and it's free.")
-            print("Jesus was momentarily born of Hagar, the Torah law that has power on earthly Jerusalem.")
-            print("With his death he killed that law, making it possible for us to be born of the free woman: God's heavenly kingdom.")
-            print("""
+            fancy_print("I'm talking here about allegorical women. There's two Jerusalems, one is on earth, and it's enslaved, the other is in Heaven, and it's free.")
+            fancy_print("Jesus was momentarily born of Hagar, the Torah law that has power on earthly Jerusalem.")
+            fancy_print("With his death he killed that law, making it possible for us to be born of the free woman: God's heavenly kingdom.")
+            fancy_print("""
                     So now, [my] brothers, we are the children of the promise, like Isaac [the son of the free woman, Sarah].
                 But as in those days the one born according to the flesh [Ishmael] persecuted the one according to the spirit [Isaac], so it is now. 
                 But what does the scripture say? Cast out the slave girl and her son, for the son of the slave girl will not be heir with the son of the free woman. 
@@ -619,10 +619,10 @@ def women():
         elif question == "help":
             help(dialogue)
         else:
-            print("I have no knowledge of that.")
+            fancy_print("I have no knowledge of that.")
 
 def sperm():
-    print("""
+    fancy_print("""
             Paul, a servant of Jesus Christ, called to be an apostle, separated unto the gospel of God,
         Concerning his Son Jesus Christ our Lord, which was made of the seed of David according to the flesh;
         And declared to be the Son of God with power, according to the spirit of holiness, by the resurrection from the dead:
@@ -638,30 +638,30 @@ def sperm():
         question = input("> ").lower()
 
         if "seed of David" in question:
-            print("In the passage above I use the word 'genomenos' to describe how Jesus came into being.")
-            print("It's the same word I use to describe Adam's creation by God.")
-            print("And it's the same word I use to describe our future resurrection body.")
-            print("My preferred word used for natural birth is 'gennao'.")
-            print("So how did God get the seed of David to manifacture Jesus's body?")
-            print("He got it from the cosmic sperm bank of course!")
+            fancy_print("In the passage above I use the word 'genomenos' to describe how Jesus came into being.")
+            fancy_print("It's the same word I use to describe Adam's creation by God.")
+            fancy_print("And it's the same word I use to describe our future resurrection body.")
+            fancy_print("My preferred word used for natural birth is 'gennao'.")
+            fancy_print("So how did God get the seed of David to manifacture Jesus's body?")
+            fancy_print("He got it from the cosmic sperm bank of course!")
         elif 'cosmic sperm bank' in question:
-            print("""
+            fancy_print("""
                     When your days are done, and you sleep with your fathers, I will raise up your sperm after you, 
                 which shall come from your belly, and I will establish his kingdom. He will build for me a house in my name, 
                 and I will establish his throne forever. I will be his father, and he will be my son.
             """)
-            print("This passage's original poetic intent is probably to describe an unending royal line.")
-            print("But read literally with pesher logic it could be interpreted as God saving up David's sperm until the time to keep his promise of an eternal line came.")
-            print("All sorts of things could be stored in heaven, even our own future bodies, even sperm.")
+            fancy_print("This passage's original poetic intent is probably to describe an unending royal line.")
+            fancy_print("But read literally with pesher logic it could be interpreted as God saving up David's sperm until the time to keep his promise of an eternal line came.")
+            fancy_print("All sorts of things could be stored in heaven, even our own future bodies, even sperm.")
 
             info_on = True
         elif question == "help":
             help(dialogue)
         else:
-            print("I have no knowledge of that.")
+            fancy_print("I have no knowledge of that.")
 
 def brothers_of_the_lord():
-    print("""
+    fancy_print("""
             Am I not free? Am I not an apostle? Have I not seen Jesus our Lord? Are you not my work in the Lord? 
         If I am not an apostle to others, at least I am to you. For you are my seal of apostleship in the Lord. My defense to those who are putting me on trial is this: 
         Do we not have the right to eat and drink? Do we not have the right to take along with us a sister as a wife, as also the other apostles and the brothers of the Lord and Cephas do? 
@@ -677,35 +677,35 @@ def brothers_of_the_lord():
         question = input("> ").lower()
 
         if "brothers of the lord" in question:
-            print("In the passage above I mention them in contrast to the apostles and Cephas.")
-            print("I'm talking about me and Barnabas being singled out and having to work for our meals.")
-            print("Also not being able to bring a 'sister of the lord' with us for said meals without us or them having to work.")
-            print("So I clearly refer to 'brothers of the Lord' not as a privileged category that is the family of Jesus, but as all other Christians.")
-            print("It's a cultic title.")
+            fancy_print("In the passage above I mention them in contrast to the apostles and Cephas.")
+            fancy_print("I'm talking about me and Barnabas being singled out and having to work for our meals.")
+            fancy_print("Also not being able to bring a 'sister of the lord' with us for said meals without us or them having to work.")
+            fancy_print("So I clearly refer to 'brothers of the Lord' not as a privileged category that is the family of Jesus, but as all other Christians.")
+            fancy_print("It's a cultic title.")
         elif "james" in question:
-            print("""
+            fancy_print("""
                     When it was the good pleasure of the God who separated me from my mother’s womb, and called me through his grace, to reveal his Son in me, 
                     that I might preach him among the Gentiles, I did not confer with flesh and blood right away, nor did I go to Jerusalem to those that were apostles before me, 
                     but I went to Arabia and again I returned to Damascus. Then after three years I went to Jerusalem, to consult with Cephas, and I stayed with him for fifteen days, 
                     but I did not see any other of the apostles, except James the brother of the Lord. And look, these things I’m writing to you, by God, I’m not lying! 
                     Then I went into the regions of Syria and Cilicia. And I was still unknown by face to the congregations of Judea that were in Christ.
             """)
-            print("Here I'm talking about how after I had my first revelation I didn't talk to any other apostle in person for years.")
-            print("Finally I decided to go to Jerusalem to consult Cephas, but I didn't see any other apostles.")
-            print("The James I met was 'the brother of the Lord' in the sense that he was just a regular 'Christian' (a name I never use).")
-            print("I phrased it as 'other than the apostles I saw only James' (heteron tōn apostolōn)")
+            fancy_print("Here I'm talking about how after I had my first revelation I didn't talk to any other apostle in person for years.")
+            fancy_print("Finally I decided to go to Jerusalem to consult Cephas, but I didn't see any other apostles.")
+            fancy_print("The James I met was 'the brother of the Lord' in the sense that he was just a regular 'Christian' (a name I never use).")
+            fancy_print("I phrased it as 'other than the apostles I saw only James' (heteron tōn apostolōn)")
 
             info_on = True
         elif question == "help":
             help(dialogue)
         else:
-            print("I have no knowledge of that.")
+            fancy_print("I have no knowledge of that.")
 
 def jesus_not_here_room():
-    print("Jesus is not here!!")
-    print("But you do find the credits for this game.")
-    print("Credits to 'On the historicity of Jesus' by Richard Carrier.")
-    print("""And all those little rascal authors of ancient Christianity,
+    fancy_print("Jesus is not here!!")
+    fancy_print("But you do find the credits for this game.")
+    fancy_print("Credits to 'On the historicity of Jesus' by Richard Carrier.")
+    fancy_print("""And all those little rascal authors of ancient Christianity,
     that made all of this possible.""")
 
     choice = input("Do you want to go back to the start?\n> ").lower()
@@ -713,16 +713,16 @@ def jesus_not_here_room():
     if choice == "yes":
         start()
     elif choice == "no":
-        print("Hope to see you again friend.")
+        fancy_print("Hope to see you again friend.")
         exit(0)
     else:
         dead("Mythical Jesus spears you from outer space with the sword of justice.")
 
 def pick_your_jesus():
-    print("You find yourself in a room with two statues")
-    print("In one Jesus is portrayed like an angel")
-    print("In the other he is portrayed like a man.")
-    print("Which one do you pick?")
+    fancy_print("You find yourself in a room with two statues")
+    fancy_print("In one Jesus is portrayed like an angel")
+    fancy_print("In the other he is portrayed like a man.")
+    fancy_print("Which one do you pick?")
 
     choice = input("> ").lower()
 
@@ -734,24 +734,25 @@ def pick_your_jesus():
         dead("Jesus urged you to make a choice with his angel sword.")
 
 def gold_room():
-    print("You believe that Jesus was a mythical entity.")
-    print("Crucified in a level of heaven by demons.")
-    print("You win 1000 pieces of gold.")
+    fancy_print("You believe that Jesus was a mythical entity.")
+    fancy_print("Crucified in a level of heaven by demons.")
+    fancy_print("You win 1000 pieces of gold.")
     exit(0)
 
 def silver_room():
-    print("You believe that Jesus was a historical man.")
-    print("Crucified by Romans on earth.")
-    print("You win 100 pieces of gold.")
+    fancy_print("You believe that Jesus was a historical man.")
+    fancy_print("Crucified by Romans on earth.")
+    fancy_print("You win 100 pieces of gold.")
     exit(0)
 
 def help(questions):
     list_lenght = len(questions)
     index = r.randint(0, list_lenght - 1)
-    print(f"{questions[index]}")
+    fancy_print(f"{questions[index]}")
 
 def dead(reason):
-    print(reason, "You Died.")
+    fancy_print(reason)
+    fancy_print("You died.")
     exit(0)
 
 def fancy_print(string):
