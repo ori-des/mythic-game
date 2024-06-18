@@ -143,9 +143,9 @@ def biblical_sources():
         elif action == 'jesus christ':
             fancy_print("The door opens with a loud creeking sound.")
             door_open = True
-        elif 'look' and 'door' in action:
+        elif 'door' in action:
             fancy_print("It's a very sturdy door. There's some writing on it.")
-        elif 'read' and 'writing' in action:
+        elif 'writing' in action:
             fancy_print("The writing says 'λόγος'")
         elif action == 'enter' and door_open:
             fancy_print("You enter the library.")
@@ -154,12 +154,12 @@ def biblical_sources():
             fancy_print("I cannot do that.")
 
 def fuck_the_acts():
-    fancy_print("Welcome friend, I'm Paul.")
-    fancy_print("I'm here to guide you through your journey.")
-    fancy_print("You will first hear about the Acts of the Apostles.")
-    fancy_print("Traditionally attributed to Luke the evangelist.")
-    fancy_print("We're going to help you evaluate if they are historical evidence or not.")
-    fancy_print("Luke will answer your questions, when you're done with him ask for me again.")
+    fancy_print("'Welcome friend, I'm Paul.'")
+    fancy_print("'I'm here to guide you through your journey.'")
+    fancy_print("'You will first hear about the Acts of the Apostles.'")
+    fancy_print("'Traditionally attributed to Luke the evangelist.'")
+    fancy_print("'We're going to help you evaluate if they are historical evidence or not.'")
+    fancy_print("'Luke will answer your questions, when you're done with him ask for me again.'")
 
     dialogue = ["hello", "who are you", "sources", "how do we know you're not writing history?", "more examples"]
 
@@ -174,7 +174,7 @@ def fuck_the_acts():
         elif "sources" in question:
             fancy_print("My only historical source was Josephus, used for background context.")
             fancy_print("My other sources were literary. The old testament and Homer.")
-        elif "how do we know you're not writing history?" in question:
+        elif "how do we know you're not writing history" in question:
             fancy_print("The contradictions. In his letters Paul says that his face was unknown to the churches in Judea until many years after his conversion.")
             fancy_print("And after his conversion he went to Arabia and then Damascus, only returning to Jerusalem after three years.")
             fancy_print("But in my story he interacts with the Jerusalem church from the very beginning, even before his conversion.")
@@ -205,7 +205,7 @@ def talk_with_mark():
     fancy_print("'What do you want to know?'")
 
     dialogue = ["hello", "who are you", "real or myth", "how do we know", "example", "go back"]
-    dialogue_unlocked = ["barabbas", "what is it", "what does barabbas mean", "what were your purposes"]
+    dialogue_unlocked = ["barabbas story", "what is it", "what does barabbas mean", "what were your purposes"]
     joined_dialogue = dialogue + dialogue_unlocked
 
     barabbas_on = False
@@ -220,26 +220,26 @@ def talk_with_mark():
             fancy_print("I am Mark, the author of the first gospel.")
         elif "real or myth" in question:
             fancy_print("I was writing a myth for my own purposes.")
-        elif "how" and "know" in question:
+        elif "how do we know" in question:
             fancy_print("By analyizing my text, I can give you an example if you wish.")
         elif "example" in question:
-            fancy_print("You are surely familiar with the episode at the crucifixion,"
-                  "where Pilate makes the people chose between Jesus and Barabbas")
+            fancy_print("You are surely familiar with the episode at the crucifixion,")
+            fancy_print("where Pilate makes the people chose between Jesus and Barabbas")
             fancy_print("At first glance it might seem like some historical truth under the myth.")
             fancy_print("But that's not what it is.")
             barabbas_on = True
-        elif barabbas_on and "barabbas" in question:
+        elif barabbas_on and "barabbas story" in question:
             fancy_print("This is the story as I've told it in my gospel.")
-            fancy_print("At the feast, Pilate used to release to them one prisoner of their choice. "
-                  "And there was one called Barabbas, chained up with those who'd engaged in rebellion, " 
-                  "who in the insurrection had committed murder. "
-                  "The mob went up and began to ask him to do what he usually did for them. "
-                  "And Pilate answered them, saying, 'Do you want me to release to you the King of the Jews?' " 
-                  "For he realized the chief priests had seized [Jesus] out of jealousy. "
-                  "But the chief priests stirred up the mob, so he would release Barabbas to them instead. "
-                  "And Pilate again answered and said to them, 'So what should I do about the one you call the King of the Jews?' " 
-                  "And they cried out again, 'Crucify him!' And Pilate said, 'What evil has he done?' But they cried out more, " 
-                  "'Crucify him!' And Pilate, wishing to satisfy the mob, released to them Barabbas, "
+            fancy_print("At the feast, Pilate used to release to them one prisoner of their choice. \n"
+                  "And there was one called Barabbas, chained up with those who'd engaged in rebellion, \n" 
+                  "who in the insurrection had committed murder. \n"
+                  "The mob went up and began to ask him to do what he usually did for them. \n"
+                  "And Pilate answered them, saying, 'Do you want me to release to you the King of the Jews?' \n" 
+                  "For he realized the chief priests had seized [Jesus] out of jealousy. \n"
+                  "But the chief priests stirred up the mob, so he would release Barabbas to them instead. \n"
+                  "And Pilate again answered and said to them, 'So what should I do about the one you call the King of the Jews?' \n" 
+                  "And they cried out again, 'Crucify him!' And Pilate said, 'What evil has he done?' But they cried out more, \n" 
+                  "'Crucify him!' And Pilate, wishing to satisfy the mob, released to them Barabbas, \n"
                   "and sent Jesus to be whipped and crucified (Mk 15.6-15)")
         elif "what is it" in question and barabbas_on:
             fancy_print("It's an allegory for the Jewish ritual at Yom Kippur.")
