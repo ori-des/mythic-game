@@ -760,4 +760,4 @@ def fancy_print(string):
         sleep(.03)
     print(end = "\n")
 
-talk_with_paul()
+start()
