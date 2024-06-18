@@ -572,21 +572,32 @@ def rulers_of_this_age():
 
                     ‘Are they Hebrews? So am I. Are they Israelites? So am I. Are they the seed of Abraham? So am I’
             """)
-
         elif question == "help":
             help(dialogue)
         else:
             print("I have no knowledge of that.")
 
 def women_and_sperm():
+    print("""
+            Paul, a servant of Jesus Christ, called to be an apostle, separated unto the gospel of God,
+        Concerning his Son Jesus Christ our Lord, which was made of the seed of David according to the flesh;
+        And declared to be the Son of God with power, according to the spirit of holiness, by the resurrection from the dead:
+        By whom we have received grace and apostleship, for obedience to the faith among all nations[...]
+    """)
+
+    dialogue = ["What does it mean that he was made from the seed of David?"]
+
     info_on = False
 
     while not info_on:
         
         question = input("> ").lower()
 
-        if question == "hi":
-            print("Hi")
+        if "seed of David" in question:
+            print("In the passage above I use the word 'genomenos' to describe how Jesus came into being.")
+            print("It's the same word I use to describe Adam's creation by God.")
+            print("And it's the same word I use to describe our future resurrection body.")
+            print("My preferred word used for natural birth is 'gennao'.")
         elif question == "bye":
             print("bye")
             info_on = True
