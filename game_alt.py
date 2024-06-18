@@ -280,18 +280,18 @@ def talk_with_matthew():
         elif "who are you" in question:
             fancy_print("I am Matthew, the author of the second gospel.")
         elif "what sources did you use" in question:
-            fancy_print("My source was the gospel of Mark.")
+            fancy_print("My source was the gospel of Mark and scripture.")
         elif "what were your intentions" in question:
             fancy_print("I wanted a version of Christianity that was more torah friendly.")
         elif "how do we know your source was mark" in question:
-            fancy_print("I rewrote his gospel to fit my agenda, sometimes I fixed his mistakes"
-                  "and made things more ridiculous in the process."
-                  "Like my interpretation of the donkey passage in Zechariah 9.9."
-                  "I wanted it to be more faithful to scripture"
-                  "So I made Jesus enter Jerusalem on two donkeys because I read it as:"
-                  "See, your king comes to you," 
-                  "righteous and victorious,"
-                  "lowly and riding on a donkey,"
+            fancy_print("I rewrote his gospel to fit my agenda, sometimes I fixed his mistakes\n"
+                  "and made things more ridiculous in the process.\n"
+                  "Like my interpretation of the donkey passage in Zechariah 9.9.\n"
+                  "I wanted it to be more faithful to scripture\n"
+                  "So I made Jesus enter Jerusalem on two donkeys because I read it as:\n"
+                  "See, your king comes to you,\n" 
+                  "righteous and victorious,\n"
+                  "lowly and riding on a donkey,\n"
                   "AND on a colt, the foal of a donkey.")
         elif "sermon on the mount historical" in question:
             fancy_print("There is no reason to believe that.")
@@ -314,7 +314,7 @@ def talk_with_luke():
     fancy_print("'I am him.'")
     fancy_print("'What's on your mind friend?'")
 
-    dialogue = ["hello","who are you", "you writing history", "sources", "example"]
+    dialogue = ["hello", "who are you", "you writing history", "sources", "example"]
 
     while True:
 
@@ -344,7 +344,7 @@ def talk_with_luke():
             'The Lord heard Elijah’s cry, and the boy’s life returned to him, and he lived. \n'
             'Elijah picked up the child and carried him down from the room into the house. \n'
             'He gave him to his mother and said, “Look, your son is alive!” \n'
-            'Then the woman said to Elijah, “Now I know that you are a man of God and that the word of the Lord from your mouth is the truth.”\n')
+            'Then the woman said to Elijah, “Now I know that you are a man of God and that the word of the Lord from your mouth is the truth.”')
         elif question == "help":
             help(dialogue)
         elif question == "go back":
@@ -406,6 +406,7 @@ def talk_with_john():
             fancy_print("That's unknown to me.")
 
 def talk_with_paul():
+    fancy_print("You see Paul's familiar face again in the most well lit room you've ever seen, he starts talking to you:")
     fancy_print("You made it.")
     fancy_print("From the authors of the gospels you get to know a certain literary version of Jesus.")
     fancy_print("From me you'll get to know another one.")
@@ -436,23 +437,23 @@ def talk_with_paul():
             help(dialogue)
         elif question == "hello":
             fancy_print("Hello traveler.")
-        elif question == "hebrews":
+        elif "hebrews" in question:
             hebrews()
-        elif question == "things jesus said":
+        elif "things jesus said" in question:
             things_jesus_said()
-        elif question == "the eucharist":
+        elif "eucharist" in question:
             the_eucharist()
-        elif question == "rulers of this age":
+        elif "rulers of this age" in question:
             rulers_of_this_age()
-        elif question == "women":
+        elif "women" in question:
             women()
-        elif question == "sperm":
+        elif "sperm" in question:
             sperm()
-        elif question == "brothers of the lord":
+        elif "brothers of the lord" in question:
             brothers_of_the_lord()
         elif question == "start":
             start()
-        elif question == "made my choice":
+        elif "made my choice" in question:
             pick_your_jesus()
         else:
             fancy_print("I have no knowledge of that.")
@@ -678,7 +679,7 @@ def sperm():
         
         question = input("> ").lower()
 
-        if "seed of David" in question:
+        if "seed of david" in question:
             fancy_print("In the passage above I use the word 'genomenos' to describe how Jesus came into being.")
             fancy_print("It's the same word I use to describe Adam's creation by God.")
             fancy_print("And it's the same word I use to describe our future resurrection body.")
