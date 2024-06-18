@@ -5,9 +5,7 @@ import time
 
 def start():
     fancy_print("You're on the quest for the historical jesus.")
-    # sleep(1)
     fancy_print("You are in a cave with three paths.")
-    # sleep(2)
     fancy_print("From what path do you start? North, east or west?")
     
     choice = input("> ").lower()
@@ -100,12 +98,9 @@ def extrabiblical_sources():
     index = r.randint(0, 8)
 
     fancy_print("The path leads you to a dining hall.")
-    #sleep(1)
     fancy_print("Nine men are sitting around a table.")
-    #sleep(1)
     fancy_print("""They don't really bother to invite you to sit down, 
     but you can see there's an empty chair and plate for you.""")
-    #sleep(1)
     fancy_print(f"""You sit next to one of them, and he presents himself.
     'Hello friend, my name is {sources[index]}'""")
 
