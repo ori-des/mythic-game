@@ -653,6 +653,7 @@ def sperm():
             print("This passage's original poetic intent is probably to describe an unending royal line.")
             print("But read literally with pesher logic it could be interpreted as God saving up David's sperm until the time to keep his promise of an eternal line came.")
             print("All sorts of things could be stored in heaven, even our own future bodies, even sperm.")
+
             info_on = True
         elif question == "help":
             help(dialogue)
@@ -660,17 +661,43 @@ def sperm():
             print("I have no knowledge of that.")
 
 def brothers_of_the_lord():
+    print("""
+            Am I not free? Am I not an apostle? Have I not seen Jesus our Lord? Are you not my work in the Lord? 
+        If I am not an apostle to others, at least I am to you. For you are my seal of apostleship in the Lord. My defense to those who are putting me on trial is this: 
+        Do we not have the right to eat and drink? Do we not have the right to take along with us a sister as a wife, as also the other apostles and the brothers of the Lord and Cephas do? 
+        Or is it only Barnabas and I who have no right to give up working for our keep? 
+    """)
+
+    dialogue = ["Who are the brothers of the lord?", "James"]
+
     info_on = False
 
     while not info_on:
         
         question = input("> ").lower()
 
-        if question == "hi":
-            print("Hi")
-        elif question == "bye":
-            print("bye")
+        if "brothers of the lord" in question:
+            print("In the passage above I mention them in contrast to the apostles and Cephas.")
+            print("I'm talking about me and Barnabas being singled out and having to work for our meals.")
+            print("Also not being able to bring a 'sister of the lord' with us for said meals without us or them having to work.")
+            print("So I clearly refer to 'brothers of the Lord' not as a privileged category that is the family of Jesus, but as all other Christians.")
+            print("It's a cultic title.")
+        elif "James" in question:
+            print("""
+                    When it was the good pleasure of the God who separated me from my mother’s womb, and called me through his grace, to reveal his Son in me, 
+                    that I might preach him among the Gentiles, I did not confer with flesh and blood right away, nor did I go to Jerusalem to those that were apostles before me, 
+                    but I went to Arabia and again I returned to Damascus. Then after three years I went to Jerusalem, to consult with Cephas, and I stayed with him for fifteen days, 
+                    but I did not see any other of the apostles, except James the brother of the Lord. And look, these things I’m writing to you, by God, I’m not lying! 
+                    Then I went into the regions of Syria and Cilicia. And I was still unknown by face to the congregations of Judea that were in Christ.
+            """)
+            print("Here I'm talking about how after I had my first revelation I didn't talk to any other apostle in person for years.")
+            print("Finally I decided to go to Jerusalem to consult Cephas, but I didn't see any other apostles.")
+            print("The James I met was 'the brother of the Lord' in the sense that he was just a regular 'Christian' (a name I never use).")
+            print("I phrased it as 'other than the apostles I saw only James' (heteron tōn apostolōn)")
+
             info_on = True
+        elif question == "help":
+            help(dialogue)
         else:
             print("I have no knowledge of that.")
 
