@@ -25,33 +25,74 @@ def start():
 def extrabiblical_sources():
     sources = ["Clement of Rome", "Ignatius of Antioch", "Eusebius", "Hegesippus", "Josephus", "Pliny", "Tacitus", "Suetonius", "George Syncellus"]
     phrases = [
-        "I don't know him personally, but I've been told he spoke thus: \n“Be merciful, that ye may obtain mercy.\nForgive, that ye may be forgiven.\nAs ye do, so shall it be done unto you.",
-        "How was he manifested to the world?\nA star shone forth in heaven above all the other stars,\nthe light of which was inexpressible,\nwhile its novelty struck men with astonishment.\nAnd all the rest of the stars,"
+        "I don't know him personally, but I've been told he spoke thus: \n"
+        "“Be merciful, that ye may obtain mercy.\nForgive, that ye may be forgiven.\nAs ye do, so shall it be done unto you.",
+        "How was he manifested to the world?\n"
+        "A star shone forth in heaven above all the other stars, \n"
+        "the light of which was inexpressible,\nwhile its novelty struck men with astonishment.\nAnd all the rest of the stars,\n"
         "with the sun and moon,\nformed a chorus to this star,\nand its light was exceedingly great above them all.",
-        "Well, a very stupid man called Papias told Iraneus, that told me, that the Lord used to teach about the end of times:\n'The days will come when vines will grow, each having ten thousand shoots,"
-        "and on each shoot ten thousand branches, and on each branch ten thousand twigs,\nand on each twig ten thousand clusters, and in each cluster ten thousand grapes,"
-        "and each grape when crushed will yield twenty-five measures of wine.'\nDo with that what you will my friend!",
-        "I know of the brother of the Lord James, he was holy from his mother's womb;\nand he drank no wine nor strong drink, nor did he eat flesh."
-        "No razor came upon his head; he did not anoint himself with oil, and he did not use the bath.\nHe alone was permitted to enter into the holy place; for he wore not woolen but linen garments."
-        "The sects before mentioned did not believe, either in a resurrection or in the coming of one to requite every man according to his works; \nbut those who did believe, believed because of James."
-        "The aforesaid scribes and Pharisees accordingly set James on the summit of the temple, and cried aloud to him, and said:\n'O just one, whom we are all bound to obey, forasmuch as the people are in error,"
-        "and follow Jesus the crucified, do tell us what is the door of Jesus the crucified'.\nAnd he answered: 'Why ask me concerning Jesus the Son of Man? He Himself sits in heaven, at the right hand of the Great Power,"
-        "and shall come on the clouds of heaven.' And, when many were fully convinced by these words, and said, 'Hosanna to the son of David',\nthe Pharisees and scribes said to one another:"
-        "'We have not done well in procuring this testimony to Jesus. But let us go up and throw him down'.\nThus they fulfilled the Scripture written in Isaiah: 'Let us away with the just man, because he is troublesome to us:"
-        "therefore shall they eat the fruit of their doings'. So they went up and threw down the just man, and said to one another: 'Let us stone James the Just'.\nAnd they began to stone him: for he was not killed by the fall;"
-        "but he turned, and kneeled down, and said: 'I beseech Thee, Lord God our Father, forgive them; for they know not what they do'\nAnd so he suffered martyrdom; and they buried him on the spot.",
-        "I'm afraid, my friend, that they are making me say words I've never written down.\nI was listing the known crimes of the Roman man known as Pontius Pilate, and a brief passage about this man Jesus appears there."
-        "But if you know of my character, my friend, you will believe it to be fake. I explain things in great detail, and this passage is too brief and vague.\nAnd the funny part is that, the sentence after it says:"
+        "Well, a very stupid man called Papias told Iraneus, that told me, that the Lord used to teach about the end of times:\n"
+        "'The days will come when vines will grow,\n"
+        "each having ten thousand shoots,\n"
+        "and on each shoot ten thousand branches, \n"
+        "and on each branch ten thousand twigs, \n"
+        "and on each twig ten thousand clusters,\n"
+        "and in each cluster ten thousand grapes, \n"
+        "and each grape when crushed will yield twenty-five measures of wine.'\n"
+        "Do with that what you will my friend!\n",
+        "I know of the brother of the Lord James, he was holy from his mother's womb;\n"
+        "and he drank no wine nor strong drink, nor did he eat flesh.\n"
+        "No razor came upon his head; he did not anoint himself with oil,\n"
+        "and he did not use the bath. He alone was permitted to enter into the holy place;\n" 
+        "for he wore not woolen but linen garments.\n"
+        "The sects before mentioned did not believe, \n"
+        "either in a resurrection or in the coming of one to requite every man according to his works;\n"
+        "but those who did believe, believed because of James.\n"
+        "The aforesaid scribes and Pharisees accordingly set James on the summit of the temple,\n"
+        "and cried aloud to him, and said:\n"
+        "'O just one, whom we are all bound to obey, forasmuch as the people are in error,\n"
+        "and follow Jesus the crucified, do tell us what is the door of Jesus the crucified'.\n"
+        "And he answered: 'Why ask me concerning Jesus the Son of Man?\n"
+        "He Himself sits in heaven, at the right hand of the Great Power,\n"
+        "and shall come on the clouds of heaven.' \n"
+        "And, when many were fully convinced by these words, and said, \n"
+        "'Hosanna to the son of David',\n"
+        "the Pharisees and scribes said to one another:\n"
+        "'We have not done well in procuring this testimony to Jesus.\n"
+        "But let us go up and throw him down'.\n"
+        "Thus they fulfilled the Scripture written in Isaiah: \n"
+        "'Let us away with the just man, because he is troublesome to us:\n"
+        "therefore shall they eat the fruit of their doings'.\n" 
+        "So they went up and threw down the just man, and said to one another:\n"
+        "'Let us stone James the Just'.\n"
+        "And they began to stone him: for he was not killed by the fall;\n"
+        "but he turned, and kneeled down, and said:\n"
+        "'I beseech Thee, Lord God our Father, forgive them;\n" 
+        "for they know not what they do'\n"
+        "And so he suffered martyrdom; and they buried him on the spot.",
+        "I'm afraid, my friend, that they are making me say words I've never written down.\n"
+        "I was listing the known crimes of the Roman man known as Pontius Pilate,\n"
+        "and a brief passage about this man Jesus appears there.\n"
+        "But if you know of my character, my friend, you will believe it to be fake.\n"
+        "I explain things in great detail, and this passage is too brief and vague.\n"
+        "And the funny part is that, the sentence after it says:\n"
         "'About the same time also another sad calamity put the Jews into disorder.'",
-        "I know this Christ was a god worshipped by some cultists. They were in the habit of meeting on a certain fixed day before it was light," 
-        "when they sang in alternate verses a hymn to Christ, as to a god, and bound themselves by a solemn oath, not to any wicked deeds,"
-        "but never to commit any fraud, theft or adultery, never to falsify their word, nor deny a trust when they should be called upon to deliver it up;"
-        "after which it was their custom to separate, and then reassemble to partake of food, but food of an ordinary and innocent kind.",
-        "Ah! I talk about 'ChrEstianus' being accused and tortured by Nero during the fire of Rome,\nChrestus is also mentioned by our friend Suetonius here in his history,"
-        "I'm being told something was added to it! About Pontius Pilate crucifying their leader Christ!\nBut their leader was Chrestus! Filthy superstitious cultists!",
+        "I know this Christ was a god worshipped by some cultists. \n"
+        "They were in the habit of meeting on a certain fixed day before it was light,\n" 
+        "when they sang in alternate verses a hymn to Christ, as to a god,\n"
+        "and bound themselves by a solemn oath, not to any wicked deeds,\n"
+        "but never to commit any fraud, theft or adultery, never to falsify their word,\n"
+        "nor deny a trust when they should be called upon to deliver it up;\n"
+        "after which it was their custom to separate, and then reassemble to partake of food, \n"
+        "but food of an ordinary and innocent kind.",
+        "Ah! I talk about 'ChrEstianus' being accused and tortured by Nero during the fire of Rome,\n"
+        "Chrestus is also mentioned by our friend Suetonius here in his history,\n"
+        "I'm being told something was added to it! About Pontius Pilate crucifying their leader Christ!\n"
+        "But their leader was Chrestus! Filthy superstitious cultists!",
         "I know nothing of the man Christ, only a bit about the Jew Chrestus, and I know of Christians being persecuted!",
-        "I read in a Sextus Julius Africanus work, that was quoting another lost work of the historian Thallus,"
-        "that he reported the eclipse and earthquake that happened on the day of the death of Jesus.\nBut my friend Eusebius here says I'm lying! Thallus never said anything relating the eclipse to the death of Jesus!"
+        "I read in a Sextus Julius Africanus work, that was quoting another lost work of the historian Thallus,\n"
+        "that he reported the eclipse and earthquake that happened on the day of the death of Jesus.\n"
+        "But my friend Eusebius here says I'm lying! Thallus never said anything relating the eclipse to the death of Jesus!\n"
         "He was just mentioning an eclipse and earthquake in Bythinia!"
         ]
     dates = ["95 CE or 60 CE, depending on who you ask.", "110 CE", "130 and 150 CE but I wrote in the 4th century", "180 CE", "93 CE", "112 CE", "116 CE", "121 CE", "50 CE (allegedly) but I wrote in the 9th century"]
