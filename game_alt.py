@@ -379,11 +379,12 @@ def talk_with_paul():
           - Things Jesus said;
           - The Eucharist;
           - Rulers of this age;
-          - Women and sperm;
+          - Women;
+          - Sperm;
           - Brothers of the lord;
     """)
 
-    dialogue = ["hello", "Hebrews", " Things Jesus said", "The Eucharist", "Rulers of this age", "Women and sperm", "Brothers of the lord", "made my choice", "start (goes back to the start of the game to pick the other paths if you didn't already)"]
+    dialogue = ["hello", "Hebrews", " Things Jesus said", "The Eucharist", "Rulers of this age", "Women", "Sperm", "Brothers of the lord", "made my choice", "start (goes back to the start of the game to pick the other paths if you didn't already)"]
     answers = []
 
     while True:
@@ -402,8 +403,10 @@ def talk_with_paul():
             the_eucharist()
         elif question == "rulers of this age":
             rulers_of_this_age()
-        elif question == "women and sperm":
-            women_and_sperm()
+        elif question == "women":
+            women()
+        elif question == "sperm":
+            sperm()
         elif question == "brothers of the lord":
             brothers_of_the_lord()
         elif question == "start":
@@ -606,6 +609,9 @@ def women_and_sperm():
                 which shall come from your belly, and I will establish his kingdom. He will build for me a house in my name, 
                 and I will establish his throne forever. I will be his father, and he will be my son.
             """)
+            print("This passage's original poetic intent is probably to describe an unending royal line.")
+            print("But read literally with pesher logic it could be interpreted as God saving up David's sperm until the time to keep his promise of an eternal line came.")
+            print("All sorts of things could be stored in heaven, even our own future bodies, even sperm.")
             info_on = True
         else:
             print("I have no knowledge of that.")
