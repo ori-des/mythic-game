@@ -580,7 +580,46 @@ def rulers_of_this_age():
         else:
             print("I have no knowledge of that.")
 
-def women_and_sperm():
+def women():
+    print("""
+            If you are Christ’s, then you [like him] are the sperm of Abraham, heirs according to the promise.
+        And I say that as long as the heir is a child, he’s no different from a slave. Even though he is lord of all, he is under guardians and stewards until [the day] the father has foreordained.
+        And we, too, were enslaved under the elements of the universe when we were children. 
+        But when the fullness of time came, God sent his son, made from a woman, made under the law, in order to rescue those under the law, in order that we might receive adoption as sons. 
+        And because you are sons, God has sent the spirit of his Son into our hearts, crying ‘Abba, father!’ As a result, you are no longer a slave, but a son; and if a son, then also an heir by God.
+    """)
+
+    dialogue = ["What does made from a woman mean?"]
+
+    info_on = False
+
+    while not info_on:
+        
+        question = input("> ").lower()
+
+        if "made from a woman" in question:
+            print("""
+                    For it is written, Abraham had two sons, one from a slave woman and one from a free woman,
+                but the one from the slave woman was born according to the flesh, and the one from the free woman by the promise.
+                Which things are said allegorically, for these [women] are the two testaments, the first being the one from Mount Sinai, which gives birth to slavery. 
+                That’s Hagar—Hagar meaning Mount Sinai in Arabia, which corresponds to Jerusalem now, for she is enslaved with her children. 
+                But the Jerusalem above is free, and she is our mother.
+            """)
+            print("I'm talking here about allegorical women. There's two Jerusalems, one is on earth, and it's enslaved, the other is in Heaven, and it's free.")
+            print("Jesus was momentarily born of Hagar, the Torah law that has power on earthly Jerusalem.")
+            print("With his death he killed that law, making it possible for us to be born of the free woman: God's heavenly kingdom.")
+            print("""
+                    So now, [my] brothers, we are the children of the promise, like Isaac [the son of the free woman, Sarah].
+                But as in those days the one born according to the flesh [Ishmael] persecuted the one according to the spirit [Isaac], so it is now. 
+                But what does the scripture say? Cast out the slave girl and her son, for the son of the slave girl will not be heir with the son of the free woman. 
+                Accordingly, [my] brothers, we are not children of the slave woman, but of the free one. For freedom did Christ set us free.
+            """)
+            
+            info_on = True
+        else:
+            print("I have no knowledge of that.")
+
+def sperm():
     print("""
             Paul, a servant of Jesus Christ, called to be an apostle, separated unto the gospel of God,
         Concerning his Son Jesus Christ our Lord, which was made of the seed of David according to the flesh;
