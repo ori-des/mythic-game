@@ -585,7 +585,7 @@ def women_and_sperm():
         By whom we have received grace and apostleship, for obedience to the faith among all nations[...]
     """)
 
-    dialogue = ["What does it mean that he was made from the seed of David?"]
+    dialogue = ["What does it mean that he was made from the seed of David?", "Cosmic sperm bank?"]
 
     info_on = False
 
@@ -598,8 +598,14 @@ def women_and_sperm():
             print("It's the same word I use to describe Adam's creation by God.")
             print("And it's the same word I use to describe our future resurrection body.")
             print("My preferred word used for natural birth is 'gennao'.")
-        elif question == "bye":
-            print("bye")
+            print("So how did God get the seed of David to manifacture Jesus's body?")
+            print("He got it from the cosmic sperm bank of course!")
+        elif 'cosmic sperm bank' in question:
+            print("""
+                    When your days are done, and you sleep with your fathers, I will raise up your sperm after you, 
+                which shall come from your belly, and I will establish his kingdom. He will build for me a house in my name, 
+                and I will establish his throne forever. I will be his father, and he will be my son.
+            """)
             info_on = True
         else:
             print("I have no knowledge of that.")
