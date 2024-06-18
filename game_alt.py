@@ -682,7 +682,7 @@ def brothers_of_the_lord():
             print("Also not being able to bring a 'sister of the lord' with us for said meals without us or them having to work.")
             print("So I clearly refer to 'brothers of the Lord' not as a privileged category that is the family of Jesus, but as all other Christians.")
             print("It's a cultic title.")
-        elif "James" in question:
+        elif "james" in question:
             print("""
                     When it was the good pleasure of the God who separated me from my mother’s womb, and called me through his grace, to reveal his Son in me, 
                     that I might preach him among the Gentiles, I did not confer with flesh and blood right away, nor did I go to Jerusalem to those that were apostles before me, 
