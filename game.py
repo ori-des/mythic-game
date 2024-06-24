@@ -783,9 +783,7 @@ def silver_room():
     exit(0)
 
 def help(questions):
-    list_lenght = len(questions)
-    index = r.randint(0, list_lenght - 1)
-    fancy_print(f"{questions[index]}")
+    fancy_print(f"{questions}")
 
 def dead(reason):
     fancy_print(reason)
